@@ -10,9 +10,9 @@ export const Container = styled.div`
     
 
     cursor: pointer;
-    background-color: #19162b;
+    background-color: #1D1EF9;
     padding: 10px 30px;
-    border: 2px solid #000;
+    border: 2px solid transparent;
     border-radius: 12px;
 
     font-size: 18px;
@@ -33,7 +33,7 @@ export const Container = styled.div`
 
     &:hover {
       background-color: #fcfcfd;
-      border-color: #19162b;
+      border: 2px solid #1D1EF9;
       transition: 300ms;
       color: #19162b;
     }

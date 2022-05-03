@@ -1,22 +1,36 @@
 import styled from 'styled-components';
+import programmerImg from "../../../assets/programmer.png"
 
 export const Container = styled.div`
   display: flex;
-  height: 90vh;
+  flex: 1;
+  height: 100vh;
   padding: 20px 80px;
-  justify-content: center;
-  flex-direction: column;
+`;
 
-  #title-container {
-    #author {
-      font-size: 16px;
-      font-weight: 600;
-      color: #1D1EF9;
-    }
+export const PresentationContainer = styled.div`
+  display: flex;
+  flex: 1;
 
-    h1 {
-      font-size: 50px;
-      color: #19162B;
+  #right-side {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+    #title-container {
+      h1 {
+        font-size: 50px;
+        color: #19162B;
+      }
     }
   }
-`;
+
+  #left-side {
+    display: flex;
+    flex: 1;
+    background-color: #987;
+
+    background: url(${programmerImg}) no-repeat center;
+    background-size: 100%;
+  }
+`

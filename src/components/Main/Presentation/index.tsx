@@ -1,18 +1,24 @@
 import React from "react";
 import SocialButtons from "../SocialButtons";
-import { Container } from "./styles";
+import { Container, PresentationContainer } from "./styles";
 
 const Presentation: React.FC = () => {
   return (
     <Container>
-      <div id="title-container">
-        <span id="author">Pedro Henrique</span>
-        <h1>
-          Hello, my <br /> name's Pedro Henrique. <br /> I'm a software <br />
-          developer.
-        </h1>
-      </div>
-      <SocialButtons />
+      <PresentationContainer>
+        <div id="right-side">
+          <div id="title-container">
+            <h1>
+              Hello, my <br /> name's Pedro Henrique. <br /> I'm a fullstack <br />
+              developer.
+            </h1>
+          </div>
+          <SocialButtons />
+        </div>
+        <div id="left-side">
+          
+        </div>
+      </PresentationContainer>
     </Container>
   );
 };
