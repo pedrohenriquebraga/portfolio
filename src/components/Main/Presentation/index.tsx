@@ -5,7 +5,7 @@ import { Container, PresentationContainer } from "./styles";
 
 const Presentation: React.FC = () => {
   return (
-    <Container>
+    <Container id="welcome">
       <PresentationContainer>
         <div id="right-side">
           <div id="title-container">

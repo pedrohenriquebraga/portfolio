@@ -29,14 +29,14 @@ const Header: React.FC = () => {
     <Container>
       <nav>
         <div id="nav-buttons-container">
-          <a href="#" rel="internal" className="nav-button">
+          <a href="#welcome" rel="internal" className="nav-button">
             Welcome
           </a>
           <a href="#about" rel="internal" className="nav-button">
-            About
+            About me
           </a>
-          <a href="#" rel="internal" className="nav-button">
-            Techs
+          <a href="#my-skills" rel="internal" className="nav-button">
+            My skills
           </a>
           <a href="#" rel="internal" className="nav-button">
             Contact me
