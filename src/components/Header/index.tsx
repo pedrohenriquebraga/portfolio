@@ -39,6 +39,9 @@ const Header: React.FC = () => {
             My skills
           </a>
           <a href="#" rel="internal" className="nav-button">
+            Projects
+          </a>
+          <a href="#" rel="internal" className="nav-button">
             Contact me
           </a>
         </div>

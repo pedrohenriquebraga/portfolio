@@ -6,8 +6,8 @@ const About: React.FC = () => {
 
   return (
     <Container id="about">
-      <h2>About me</h2>
       <div id="about-me-container">
+      <h2>About me</h2>
         <p>
           I'm {yearsOld} years old and programmer since 13 years old. I'm located in
           Brazil. I Have skills in frontend (mobile and web) and backend
@@ -19,6 +19,7 @@ const About: React.FC = () => {
           obviously programming.
         </p>
       </div>
+      <div id="left-side"></div>
     </Container>
   );
 };
