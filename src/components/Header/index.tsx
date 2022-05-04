@@ -32,7 +32,7 @@ const Header: React.FC = () => {
           <a href="#" rel="internal" className="nav-button">
             Welcome
           </a>
-          <a href="#" rel="internal" className="nav-button">
+          <a href="#about" rel="internal" className="nav-button">
             About
           </a>
           <a href="#" rel="internal" className="nav-button">
@@ -45,6 +45,7 @@ const Header: React.FC = () => {
         <div id="social-buttons-container">
           {socialNetworks.map(({ name, url, icon }) => (
             <a
+              key={name}
               title={`Visit my ${name} page`}
               href={url}
               target="_blank"

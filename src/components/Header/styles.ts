@@ -6,6 +6,8 @@ export const Container = styled.div`
   z-index: 5;
 
   padding: 20px 80px;
+  background-color: #FCFCFD;
+  box-shadow: 1px 1px 5px #00000055;
 
   nav {
     display: flex;
@@ -31,6 +33,7 @@ export const Container = styled.div`
     }
 
     #social-buttons-container {
+
       .social-button {
         &:not(:first-child) {
           margin-left: 20px;

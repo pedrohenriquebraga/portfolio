@@ -23,6 +23,7 @@ const SocialButtons: React.FC = () => {
     <Container>
       {socialButtons.map((button) => (
         <a
+          key={button.name}
           href={button.url}
           rel="external noreferrer"
           target="_blank"

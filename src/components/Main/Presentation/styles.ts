@@ -1,5 +1,17 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import programmerImg from "../../../assets/programmer.png"
+
+const scrollDownAnimation = keyframes`
+  0% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
+`
 
 export const Container = styled.div`
   display: flex;
@@ -9,6 +21,7 @@ export const Container = styled.div`
 `;
 
 export const PresentationContainer = styled.div`
+  position: relative;
   display: flex;
   flex: 1;
 
@@ -28,9 +41,25 @@ export const PresentationContainer = styled.div`
   #left-side {
     display: flex;
     flex: 1;
-    background-color: #987;
 
     background: url(${programmerImg}) no-repeat center;
     background-size: 100%;
   }
+
+  #scroll-warning {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    font-size: 16px;
+    animation: ${scrollDownAnimation} 1s linear infinite;
+
+    span {
+      display: flex;
+      align-items: center;
+      margin-right: 5px;
+    }
+  }
+
 `
