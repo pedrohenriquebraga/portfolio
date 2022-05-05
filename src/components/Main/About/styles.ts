@@ -17,7 +17,7 @@ export const Container = styled.div`
       margin-bottom: 30px;
     }
     p {
-      font-size: 22px;
+      font-size: 20px;
       margin-bottom: 20px;
       color: #fcfcfd;
     }
@@ -26,6 +26,6 @@ export const Container = styled.div`
   #left-side {
     width: 50%;
     background: url(${ReadingImg}) no-repeat center;
-    background-size: 80%;
+    background-size: contain;
   }
 `;

@@ -1,5 +1,6 @@
 import React from 'react';
 import About from '../About';
+import Contact from '../Contact';
 import Presentation from '../Presentation';
 import Skills from '../Skills';
 
@@ -11,6 +12,7 @@ const Body: React.FC = () => {
       <Presentation />
       <About />
       <Skills />
+      <Contact />
     </Container>
   );
 }

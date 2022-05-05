@@ -41,7 +41,7 @@ const Header: React.FC = () => {
           <a href="#" rel="internal" className="nav-button">
             Projects
           </a>
-          <a href="#" rel="internal" className="nav-button">
+          <a href="#contact-me" rel="internal" className="nav-button">
             Contact me
           </a>
         </div>
