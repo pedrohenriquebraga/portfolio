@@ -43,7 +43,7 @@ export const PresentationContainer = styled.div`
     flex: 1;
 
     background: url(${programmerImg}) no-repeat center;
-    background-size: 100%;
+    background-size: contain;
   }
 
   #scroll-warning {

@@ -16,10 +16,14 @@ export const Container = styled.div`
       font-size: 35px;
       margin-bottom: 30px;
     }
-    p {
-      font-size: 20px;
+    p, ul {
+      font-size: 19px;
       margin-bottom: 20px;
       color: #fcfcfd;
+
+      li {
+        margin-left: 50px;
+      }
     }
   }
 

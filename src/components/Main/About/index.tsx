@@ -7,17 +7,28 @@ const About: React.FC = () => {
   return (
     <Container id="about">
       <div id="about-me-container">
-      <h2>About me</h2>
+        <h2>About me</h2>
         <p>
-          I'm {yearsOld} years old and programmer since 13 years old. I'm located in
-          Brazil. I Have skills in frontend (mobile and web) and backend
-          development.
+          I'm {yearsOld} years old and programmer since 13 years old. I'm
+          located in Brazil. I Have skills in frontend and backend development.
         </p>
         <p>
           I'm always learning new things. I'm always trying to improve my
-          skills. I love to read books, watch movies, listen music, play games and
-          obviously programming.
+          skills. I love to read books, watch movies, listen music, play games
+          and obviously programming.
         </p>
+        <p>
+          I'm a high school student. I'm available for works in anywhere in
+          Brazil and world.
+        </p>
+        <ul>
+          <li>Web development (HTML/CSS, React and NextJS)</li>
+          <li>Mobile development (React Native, Firebase and Expo)</li>
+          <li>Backend development (NodeJS)</li>
+          <li>API development (Express, Typeorm, Socket.io)</li>
+          <li>Database manager (PostgresSQL, MongoDB)</li>
+          <li>English intermediary</li>
+        </ul>
       </div>
       <div id="left-side"></div>
     </Container>
