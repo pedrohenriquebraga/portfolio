@@ -1,9 +1,11 @@
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FiMenu, FiArrowLeft } from "react-icons/fi";
 
 import { Container } from "./styles";
 
 const Header: React.FC = () => {
+  const [openHeader, setOpenHeader] = useState(false);
   const socialNetworks = useMemo(
     () => [
       {
@@ -25,9 +27,21 @@ const Header: React.FC = () => {
     []
   );
 
+  const handleOpenHeader = () => {
+    setOpenHeader((old) => !old);
+  };
+
   return (
-    <Container>
+    <Container openHeader={openHeader}>
       <nav>
+        <div id="close-header">
+          <button onClick={handleOpenHeader}>
+            <span>
+              <FiArrowLeft />
+            </span>{" "}
+            Close menu
+          </button>
+        </div>
         <div id="nav-buttons-container">
           <a href="#welcome" rel="internal" className="nav-button">
             Welcome
@@ -60,6 +74,11 @@ const Header: React.FC = () => {
           ))}
         </div>
       </nav>
+      <div id="menu-button-container" onClick={handleOpenHeader}>
+        <button>
+          <FiMenu />
+        </button>
+      </div>
     </Container>
   );
 };
