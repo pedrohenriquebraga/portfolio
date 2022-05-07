@@ -1,5 +1,5 @@
-import styled, { keyframes } from 'styled-components';
-import programmerImg from "../../../assets/programmer.png"
+import styled, { keyframes } from "styled-components";
+import programmerImg from "../../../assets/programmer.png";
 
 const scrollDownAnimation = keyframes`
   0% {
@@ -11,13 +11,19 @@ const scrollDownAnimation = keyframes`
   100% {
     transform: translateY(-5%);
   }
-`
+`;
 
 export const Container = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 1;
-  height: 100vh;
-  padding: 20px 80px;
+  padding: 2rem 8rem;
+  min-height: 100vh;
+
+  @media (max-width: 768px) {
+    padding: 2rem 4rem;
+  }
 `;
 
 export const PresentationContainer = styled.div`
@@ -29,21 +35,22 @@ export const PresentationContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-  
+    width: 50%;
+
     #title-container {
       h1 {
-        font-size: 50px;
-        color: #19162B;
+        font-size: 4.2rem;
+        color: #19162b;
       }
     }
   }
 
   #left-side {
     display: flex;
-    flex: 1;
+    width: 50%;
 
     background: url(${programmerImg}) no-repeat center;
-    background-size: contain;
+    background-size: 100%;
   }
 
   #scroll-warning {
@@ -52,7 +59,7 @@ export const PresentationContainer = styled.div`
     bottom: 0;
     right: 0;
 
-    font-size: 16px;
+    font-size: 1.6rem;
     animation: ${scrollDownAnimation} 1s linear infinite;
 
     span {
@@ -62,4 +69,25 @@ export const PresentationContainer = styled.div`
     }
   }
 
-`
+  @media (max-width: 768px) {
+    #right-side {
+      width: 100%;
+    }
+
+    #left-side {
+      display: none;
+    }
+
+    #right-side {
+      #title-container {
+        h1 {
+          font-size: 3.5rem;
+        }
+      }
+    }
+
+    #scroll-warning {
+      bottom: -5rem;
+    }
+  }
+`;

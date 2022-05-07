@@ -38,4 +38,14 @@ export const Container = styled.div`
       color: #19162b;
     }
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .button-container {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      width: 100%;
+      max-width: 320px;
+    }
+  }
 `;

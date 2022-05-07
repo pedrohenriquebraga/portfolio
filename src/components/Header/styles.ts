@@ -84,6 +84,7 @@ export const Container = styled.div<{ openHeader: boolean }>`
   @media (max-width: 872px) {
     display: flex;
     justify-content: flex-end;
+    padding: 2rem;
 
     nav {
       display: ${(props) => (!props.openHeader ? "none" : "flex")};

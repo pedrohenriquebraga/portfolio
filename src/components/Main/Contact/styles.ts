@@ -4,12 +4,12 @@ import ContactImg from "../../../assets/contact.svg";
 export const Container = styled.div`
   display: flex;
   flex: 1;
-  padding: 40px 80px;
+  padding: 4rem 8rem;
   color: #19162b;
 
   h2 {
-    font-size: 35px;
-    margin-bottom: 30px;
+    font-size: 3.5rem;
+    margin-bottom: 3rem;
   }
 
   #contact-container {
@@ -20,13 +20,13 @@ export const Container = styled.div`
 
     p,
     ul {
-      font-size: 19px;
-      margin-bottom: 20px;
+      font-size: 1.9rem;
+      margin-bottom: 2rem;
 
       list-style: none;
 
       li {
-        margin-bottom: 5px;
+        margin-bottom: 0.5rem;
         a {
           text-decoration: none;
           color: #5863d8;
@@ -46,5 +46,17 @@ export const Container = styled.div`
     width: 50%;
     background: url(${ContactImg}) no-repeat center;
     background-size: contain;
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 4rem;
+
+    #contact-container {
+      width: 100%;
+    }
+
+    #left-side {
+      display: none;
+    }
   }
 `;
