@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en-US">
       <title>Pedro Henrique | Fullstack developer | Frontend | Backend</title>
       <Head>
         <meta charSet="utf-8" />
