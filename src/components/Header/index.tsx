@@ -20,7 +20,7 @@ const Header: React.FC = () => {
       },
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/phbraga/",
+        url: "https://www.linkedin.com/in/phsantosbraga/",
         icon: <FaLinkedin />,
       },
     ],
