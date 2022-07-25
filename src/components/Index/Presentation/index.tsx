@@ -10,7 +10,7 @@ const Presentation: React.FC = () => {
         <div id="right-side">
           <div id="title-container">
             <h1>
-              Hello, my <br /> name's Pedro Henrique. <br /> I'm a fullstack{" "}
+              Hello, my <br /> name&apos;s Pedro Henrique. <br /> I&apos;m a fullstack{" "}
               <br />
               developer.
             </h1>

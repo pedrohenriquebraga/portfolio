@@ -9,16 +9,16 @@ const About: React.FC = () => {
       <div id="about-me-container">
         <h2>About me</h2>
         <p>
-          I'm {yearsOld} years old and programmer since 13 years old. I'm
+          I&apos;m {yearsOld} years old and programmer since 13 years old. I&apos;m
           located in Brazil. I Have skills in frontend and backend development.
         </p>
         <p>
-          I'm always learning new things. I'm always trying to improve my
+          I&apos;m always learning new things. I&apos;m always trying to improve my
           skills. I love to read books, watch movies, listen music, play games
           and obviously program.
         </p>
         <p>
-          I'm a high school student. I'm available for jobs in anywhere.
+          I&apos;m a high school student. I&apos;m available for jobs in anywhere.
         </p>
         <ul>
           <li>English intermediary</li>
