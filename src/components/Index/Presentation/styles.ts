@@ -48,7 +48,7 @@ export const PresentationContainer = styled.div`
     display: flex;
     width: 50%;
 
-    background: url('/programmer.png') no-repeat center;
+    background: url('/programmer.webp') no-repeat center;
     background-size: 100%;
   }
 
@@ -83,10 +83,6 @@ export const PresentationContainer = styled.div`
           font-size: 3.5rem;
         }
       }
-    }
-
-    #scroll-warning {
-      bottom: -5rem;
     }
   }
 `;

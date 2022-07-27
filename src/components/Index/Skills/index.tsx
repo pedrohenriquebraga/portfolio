@@ -15,13 +15,13 @@ const Skills: React.FC = () => {
       {
         name: "Typescript",
         docsUrl: "https://www.typescriptlang.org/",
-        srcImg: "/typescript-logo.png",
+        srcImg: "/typescript-logo.webp",
         altImg: "Typescript Logo",
       },
       {
         name: "Typeorm",
         docsUrl: "https://typeorm.io/",
-        srcImg: "/typeorm-logo.png",
+        srcImg: "/typeorm-logo.webp",
         altImg: "Typeorm Logo",
       },
       {
@@ -33,13 +33,13 @@ const Skills: React.FC = () => {
       {
         name: "React JS",
         docsUrl: "https://reactjs.org/",
-        srcImg: "/react-logo.png",
+        srcImg: "/react-logo.webp",
         altImg: "React Logo",
       },
       {
         name: "React Native",
         docsUrl: "https://reactnative.dev/",
-        srcImg: "/react-native-logo.svg",
+        srcImg: "/react-native-logo.webp",
         altImg: "React Native Logo",
       },
     ],
@@ -60,7 +60,6 @@ const Skills: React.FC = () => {
               <Image
                 width={100}
                 height={100}
-                quality={65}
                 src={srcImg}
                 alt={altImg}
               />
