@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.main`
   display: flex;
   flex: 1;
-  padding: 4rem 8rem;
+  padding: 4rem 6rem;
   background-color: #5863d8;
 
   #about-me-container {

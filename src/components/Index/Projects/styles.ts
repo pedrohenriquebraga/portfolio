@@ -5,7 +5,7 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   flex: 1;
-  padding: 4rem 8rem;
+  padding: 4rem 6rem;
   background-color: #5863d8;
 
   #my-projects-container {

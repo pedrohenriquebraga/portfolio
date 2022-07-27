@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   display: flex;
   flex: 1;
-  padding: 4rem 8rem;
+  padding: 4rem 6rem;
   color: #19162b;
 
   h2 {

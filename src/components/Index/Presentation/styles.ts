@@ -17,7 +17,7 @@ export const Container = styled.header`
   align-items: center;
   justify-content: center;
   flex: 1;
-  padding: 2rem 8rem;
+  padding: 2rem 6rem;
   min-height: 100vh;
   
   @media (max-width: 768px) {
