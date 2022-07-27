@@ -12,7 +12,7 @@ const scrollDownAnimation = keyframes`
   }
 `;
 
-export const Container = styled.div`
+export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;

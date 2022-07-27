@@ -52,8 +52,8 @@ const Header: React.FC = () => {
           <a href="#my-skills" rel="internal" className="nav-button">
             My skills
           </a>
-          <a href="#" rel="internal" className="nav-button">
-            Projects
+          <a href="#my-projects" rel="internal" className="nav-button">
+            My projects
           </a>
           <a href="#contact-me" rel="internal" className="nav-button">
             Contact me

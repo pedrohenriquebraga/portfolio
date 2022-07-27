@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div<{ openHeader: boolean }>`
+export const Container = styled.header<{ openHeader: boolean }>`
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -85,6 +85,7 @@ export const Container = styled.div<{ openHeader: boolean }>`
     display: flex;
     justify-content: flex-end;
     padding: 2rem;
+    
 
     nav {
       display: ${(props) => (!props.openHeader ? "none" : "flex")};
@@ -94,8 +95,10 @@ export const Container = styled.div<{ openHeader: boolean }>`
       flex-direction: column;
       background-color: #fcfcfd;
       right: 0;
+      top: 0;
 
       padding: 2rem;
+      box-shadow: 1px 1px 5px #00000055;
 
       #close-header {
         display: block;
