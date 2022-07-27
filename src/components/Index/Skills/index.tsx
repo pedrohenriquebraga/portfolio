@@ -1,10 +1,4 @@
 import React, { useMemo } from "react";
-import ReactNativeLogo from "@assets/react-native-logo.svg";
-import ReactLogo from "@assets/react-logo.png";
-import TypescriptLogo from "@assets/typescript-logo.png";
-import NodeJsLogo from "@assets/nodejs-logo.png";
-import TypeormLogo from "@assets/typeorm-logo.png";
-import ExpoLogo from "@assets/expo-logo.webp";
 import { Container } from "./styles";
 
 import Image from "next/image";
@@ -15,37 +9,37 @@ const Skills: React.FC = () => {
       {
         name: "Node JS",
         docsUrl: "https://nodejs.org/en/about/",
-        srcImg: NodeJsLogo,
+        srcImg: "/expo-logo.webp",
         altImg: "Node JS Logo",
       },
       {
         name: "Typescript",
         docsUrl: "https://www.typescriptlang.org/",
-        srcImg: TypescriptLogo,
+        srcImg: "/typescript-logo.png",
         altImg: "Typescript Logo",
       },
       {
         name: "Typeorm",
         docsUrl: "https://typeorm.io/",
-        srcImg: TypeormLogo,
+        srcImg: "/typeorm-logo.png",
         altImg: "Typeorm Logo",
       },
       {
         name: "Expo",
         docsUrl: "https://expo.dev/",
-        srcImg: ExpoLogo,
+        srcImg: "/expo-logo.webp",
         altImg: "Expo Logo",
       },
       {
-        name: "React",
+        name: "React JS",
         docsUrl: "https://reactjs.org/",
-        srcImg: ReactLogo,
+        srcImg: "/react-logo.png",
         altImg: "React Logo",
       },
       {
         name: "React Native",
         docsUrl: "https://reactnative.dev/",
-        srcImg: ReactNativeLogo,
+        srcImg: "/react-native-logo.svg",
         altImg: "React Native Logo",
       },
     ],
@@ -66,6 +60,7 @@ const Skills: React.FC = () => {
               <Image
                 width={100}
                 height={100}
+                quality={65}
                 src={srcImg}
                 alt={altImg}
               />

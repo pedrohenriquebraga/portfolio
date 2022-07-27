@@ -11,6 +11,8 @@ export default function Document() {
         <meta name="google-site-verification" content="QknoFbNAM4A4QAmJVKJvaMROn2gasuAII8y7Q_8XRls" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <meta
           property="og:site_name"
           content="Pedro Henrique Santos Braga's Portfolio"
