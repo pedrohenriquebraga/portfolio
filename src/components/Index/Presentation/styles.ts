@@ -12,6 +12,28 @@ const scrollDownAnimation = keyframes`
   }
 `;
 
+const ShowBackgroundImage = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
+
+const ShowPresentation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+`;
+
 export const Container = styled.header`
   display: flex;
   align-items: center;
@@ -36,6 +58,8 @@ export const PresentationContainer = styled.div`
     flex-direction: column;
     width: 50%;
 
+    animation: ${ShowPresentation} 500ms linear;
+
     #title-container {
       h1 {
         font-size: 4.2rem;
@@ -50,6 +74,8 @@ export const PresentationContainer = styled.div`
 
     background: url('/programmer.webp') no-repeat center;
     background-size: 100%;
+
+    animation: ${ShowBackgroundImage} 500ms linear;
   }
 
   #scroll-warning {
