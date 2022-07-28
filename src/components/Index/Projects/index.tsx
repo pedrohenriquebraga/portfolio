@@ -69,7 +69,7 @@ const Projects: React.FC = () => {
       <div id="my-projects-container">
         <h2>My projects</h2>
         <p>
-          These are all my projects designed and developed by me. all images
+          These are my projects designed and developed by me. The images
           will take you to the repository on my Github. All projects here are
           personal. I&apos;ve never done a professional project, but I&apos;m
           looking for new Job opportunities. For more projects{" "}
