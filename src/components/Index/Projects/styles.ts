@@ -37,6 +37,12 @@ export const ProjectsSliderImagesContainer = styled.div`
   flex: 1;
   width: 100%;
 
+  background-color: #4653d8;
+
+  padding: 2rem 0;
+  border-radius: 8px;
+
+
   #slider-controller-container {
     position: absolute;
     
@@ -64,7 +70,7 @@ export const ProjectsSliderImagesContainer = styled.div`
       height: 5rem;
 
       &:hover {
-        background: #00000077;
+        background: #00000088;
         transition: 500ms;
       }
 

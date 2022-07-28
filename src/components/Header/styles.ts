@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const ShowHeader = keyframes`
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+`;
 
 export const Container = styled.header<{ openHeader: boolean }>`
   display: flex;
@@ -11,6 +20,8 @@ export const Container = styled.header<{ openHeader: boolean }>`
   padding: 1.5rem 6rem;
   background-color: #ffffff;
   box-shadow: 1px 1px 5px #00000055;
+  
+  animation: ${ShowHeader} 500ms ease-in-out;
 
   nav {
     display: flex;

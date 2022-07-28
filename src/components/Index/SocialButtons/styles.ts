@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  margin-top: 2rem;
 
   .button-container {
     display: flex;
@@ -11,17 +11,16 @@ export const Container = styled.section`
 
     cursor: pointer;
     background-color: #1D1EF9;
-    padding: 10px 30px;
-    border: 2px solid transparent;
-    border-radius: 12px;
+    padding: 1.2rem 3rem;
+    border-radius: 8px;
 
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: 600;
     color: #fff;
     text-decoration: none;
 
     &:first-child {
-      margin-right: 20px;
+      margin-right: 2rem;
     }
 
     span {
@@ -32,10 +31,8 @@ export const Container = styled.section`
     }
 
     &:hover {
-      background-color: #fcfcfd;
-      border: 2px solid #1D1EF9;
       transition: 300ms;
-      color: #19162b;
+      transform: scale(1.05);
     }
   }
 
