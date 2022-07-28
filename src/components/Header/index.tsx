@@ -3,6 +3,8 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FiMenu, FiArrowLeft } from "react-icons/fi";
 
 import { Container } from "./styles";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   const [openHeader, setOpenHeader] = useState(false);
@@ -33,13 +35,25 @@ const Header: React.FC = () => {
 
   return (
     <Container openHeader={openHeader}>
+      <div id="logo">
+        <Link href="/">
+          <a rel="internal">
+            <Image
+              src="/logo.png"
+              alt="Pedro Henrique portfolio's logo"
+              width={60}
+              height={60}
+            />
+          </a>
+        </Link>
+      </div>
       <nav>
         <div id="close-header">
           <button onClick={handleOpenHeader}>
             <span>
               <FiArrowLeft />
             </span>{" "}
-            Close menu
+            Close
           </button>
         </div>
         <div id="nav-buttons-container">

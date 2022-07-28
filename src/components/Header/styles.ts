@@ -1,18 +1,24 @@
 import styled from "styled-components";
 
 export const Container = styled.header<{ openHeader: boolean }>`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   width: 100%;
   z-index: 5;
 
-  padding: 2rem 8rem;
-  background-color: #fcfcfd;
+  padding: 1.5rem 6rem;
+  background-color: #ffffff;
   box-shadow: 1px 1px 5px #00000055;
 
   nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+    #logo {
+      margin-right: 2rem;
+    }
 
     #close-header {
       display: none;
@@ -32,6 +38,7 @@ export const Container = styled.header<{ openHeader: boolean }>`
     }
 
     #nav-buttons-container {
+      margin-right: 5rem;
       .nav-button {
         &:not(:first-child) {
           margin-left: 3rem;
@@ -49,12 +56,14 @@ export const Container = styled.header<{ openHeader: boolean }>`
       }
     }
 
-    #social-buttons-container {
+    #social-buttons-container {   
+      margin-top: 1rem;
       .social-button {
+
         &:not(:first-child) {
           margin-left: 2rem;
         }
-
+        
         &:hover {
           color: #1d1ef9;
           transition: 300ms;
@@ -81,9 +90,8 @@ export const Container = styled.header<{ openHeader: boolean }>`
     }
   }
 
-  @media (max-width: 872px) {
+  @media (max-width: 920px) {
     display: flex;
-    justify-content: flex-end;
     padding: 2rem;
     
 
@@ -93,6 +101,7 @@ export const Container = styled.header<{ openHeader: boolean }>`
       height: 100vh;
       position: absolute;
       flex-direction: column;
+      justify-content: space-around;
       background-color: #fcfcfd;
       right: 0;
       top: 0;
@@ -107,6 +116,7 @@ export const Container = styled.header<{ openHeader: boolean }>`
       #nav-buttons-container {
         display: flex;
         flex-direction: column;
+        margin-right: 0;
 
         .nav-button {
           &:not(:first-child) {
