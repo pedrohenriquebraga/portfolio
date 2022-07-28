@@ -9,7 +9,7 @@ const Skills: React.FC = () => {
       {
         name: "Node JS",
         docsUrl: "https://nodejs.org/en/about/",
-        srcImg: "/expo-logo.webp",
+        srcImg: "/nodejs-logo.webp",
         altImg: "Node JS Logo",
       },
       {
