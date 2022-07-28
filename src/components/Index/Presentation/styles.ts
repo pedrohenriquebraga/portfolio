@@ -55,7 +55,7 @@ export const PresentationContainer = styled.div`
   #scroll-warning {
     display: flex;
     position: absolute;
-    top: 65vh;
+    top: 60vh;
     right: 0;
 
     font-size: 1.6rem;

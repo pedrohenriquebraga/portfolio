@@ -41,13 +41,13 @@ export const ProjectsSliderImagesContainer = styled.div`
     position: absolute;
     
     display: flex;
-    width: 80%;
+    width: 90%;
     flex: 1;
 
     justify-content: space-between;
     align-items: center;
 
-    right: 10%;
+    right: 5%;
     top: 50%;
 
     .slider-controller {
@@ -88,7 +88,7 @@ export const ProjectsSliderImagesContainer = styled.div`
   
       h3 {
         text-align: center;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: #fff;
         margin-bottom: 1rem;
       }
