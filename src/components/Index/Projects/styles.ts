@@ -36,19 +36,18 @@ export const ProjectsSliderImagesContainer = styled.div`
   display: flex;
   flex: 1;
   width: 100%;
-  align-items: center;
-  justify-content: center;
 
   #slider-controller-container {
     position: absolute;
     
     display: flex;
-    width: 100%;
+    width: 80%;
     flex: 1;
 
     justify-content: space-between;
     align-items: center;
 
+    right: 10%;
     top: 50%;
 
     .slider-controller {
@@ -56,7 +55,7 @@ export const ProjectsSliderImagesContainer = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 20px;
+      font-size: 2rem;
       background: #00000055;
       color: #fff;
       border-radius: 50%;
@@ -72,17 +71,33 @@ export const ProjectsSliderImagesContainer = styled.div`
   }
 
   #slider-main-image {
-    display: flex;
-    flex: 1;
-    width: 100%;
-    user-select: none;
-
-    cursor: pointer;
-
-    img {
-      width: 100%;
-      object-fit: cover;
-      border-radius: 5px;
+    a {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      flex: 1;
+      user-select: none;
+  
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+  
+  
+      cursor: pointer;
+      text-decoration: none;
+  
+      h3 {
+        text-align: center;
+        font-size: 3rem;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+  
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
     }
   }
 `;

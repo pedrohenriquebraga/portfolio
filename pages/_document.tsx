@@ -27,7 +27,7 @@ export default function Document() {
         />
         <meta
           name="description"
-          content="This is a Pedro Henrique's portfolio. Here you can find my projects, resume and contact information. Enjoy! :)"
+          content="This is a Pedro Henrique Santos Braga's portfolio. Here you can find my projects, resume and contact information. Enjoy! :)"
         />
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"

@@ -104,9 +104,11 @@ const Projects: React.FC = () => {
                 target="_blank"
                 rel="external noreferrer"
               >
+                <h3>{slides[currentSlide].name}</h3>
                 <img
                   src={slides[currentSlide].image_url}
                   alt={slides[currentSlide].name}
+                  loading="lazy"
                 />
               </a>
             </div>
