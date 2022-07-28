@@ -79,8 +79,7 @@ const Projects: React.FC = () => {
             rel="noopener noreferrer"
           >
             visit my Github
-          </a>
-          .
+          </a>.
         </p>
         <ProjectsSliderImagesContainer>
           <div id="slider-container">
@@ -111,6 +110,7 @@ const Projects: React.FC = () => {
                   loading="lazy"
                 />
               </a>
+              <p id="slider-counter">{currentSlide + 1} / {slides.length}</p>
             </div>
           </div>
         </ProjectsSliderImagesContainer>

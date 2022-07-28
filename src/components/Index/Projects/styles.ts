@@ -67,6 +67,11 @@ export const ProjectsSliderImagesContainer = styled.div`
         background: #00000077;
         transition: 500ms;
       }
+
+    }
+
+    @media (max-width: 550px) {
+      bottom: 20%;
     }
   }
 
@@ -81,6 +86,10 @@ export const ProjectsSliderImagesContainer = styled.div`
       align-items: center;
       justify-content: center;
       margin: auto;
+
+      @media (max-width: 550px) {
+        width: 100%;
+      }
   
   
       cursor: pointer;
@@ -98,6 +107,18 @@ export const ProjectsSliderImagesContainer = styled.div`
         object-fit: cover;
         border-radius: 8px;
       }
+    }
+
+    #slider-counter {
+      user-select: none;
+      width: 50%;
+      font-size: 1.4rem;
+      text-align: center;
+      margin-top: 1rem;
+      background-color: #00000055;
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 10px auto;
     }
   }
 `;
