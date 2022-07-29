@@ -70,7 +70,7 @@ export default class MyDocument extends Document {
             name="description"
             content="This is a Pedro Henrique Santos Braga's portfolio. I'm a Fullstack Developer. Here you can find my projects, resume and contact information. Enjoy! :)"
           />
-          {process.env.NODE_ENV === "production" && (
+          {process.env.NEXT_PUBLIC_VERCEL_ENV === "production" && (
             <>
               <Script
                 src="https://www.googletagmanager.com/gtag/js?id=G-4859XKBX83"
