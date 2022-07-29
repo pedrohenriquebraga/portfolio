@@ -1,5 +1,6 @@
 import React, { useMemo } from "react";
 import { Container } from "./styles";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 import Image from "next/image";
 
@@ -49,24 +50,21 @@ const Skills: React.FC = () => {
   return (
     <Container id="my-skills">
       <h2>My Skills</h2>
-      <div id="skills-container">
-        {skills.map(({ name, docsUrl, srcImg, altImg }) => (
-          <div key={name} className="skill-container">
-            <a
-              target="_blank"
-              rel="external noopener noreferrer"
-              href={docsUrl}
-            >
-              <Image
-                width={100}
-                height={100}
-                src={srcImg}
-                alt={altImg}
-              />
-            </a>
-          </div>
-        ))}
-      </div>
+      <AnimationOnScroll animateOnce animateIn="animate__backInRight">
+        <div id="skills-container">
+          {skills.map(({ name, docsUrl, srcImg, altImg }) => (
+            <div key={name} className="skill-container">
+              <a
+                target="_blank"
+                rel="external noopener noreferrer"
+                href={docsUrl}
+              >
+                <Image width={100} height={100} src={srcImg} alt={altImg} />
+              </a>
+            </div>
+          ))}
+        </div>
+      </AnimationOnScroll>
     </Container>
   );
 };
