@@ -43,6 +43,23 @@ export default class MyDocument extends Document {
       <Html lang="en-US">
         <title>Pedro Henrique | Fullstack developer | Frontend | Backend</title>
         <Head>
+        {process.env.NODE_ENV === "production" && (
+            <>
+              <Script
+                src="https://www.googletagmanager.com/gtag/js?id=G-4859XKBX83"
+                strategy="afterInteractive"
+              />
+              <Script id="google-analytics" strategy="afterInteractive">
+                {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-4859XKBX83');
+                `}
+              </Script>
+            </>
+          )}
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#000000" />
           <meta property="og:type" content="website" />
@@ -71,23 +88,7 @@ export default class MyDocument extends Document {
             name="description"
             content="This is a Pedro Henrique Santos Braga's portfolio. I'm a Fullstack Developer. Here you can find my projects, resume and contact information. Enjoy! :)"
           />
-          {process.env.NODE_ENV === "production" && (
-            <>
-              <Script
-                src="https://www.googletagmanager.com/gtag/js?id=G-4859XKBX83"
-                strategy="afterInteractive"
-              />
-              <Script id="google-analytics" strategy="afterInteractive">
-                {`
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-
-                  gtag('config', 'G-4859XKBX83');
-                `}
-              </Script>
-            </>
-          )}
+          
         </Head>
         <body>
           <Main />
