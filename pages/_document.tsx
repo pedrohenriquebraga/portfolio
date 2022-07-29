@@ -6,6 +6,7 @@ import Document, {
   DocumentContext,
   DocumentInitialProps,
 } from "next/document";
+import Script from "next/script";
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
@@ -56,10 +57,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-          <meta
-            property="og:site_name"
-            content="Pedro Henrique's Portfolio"
-          />
+          <meta property="og:site_name" content="Pedro Henrique's Portfolio" />
           <meta
             property="og:title"
             content="Pedro Henrique | Fullstack developer | Frontend | Backend"
@@ -72,6 +70,23 @@ export default class MyDocument extends Document {
             name="description"
             content="This is a Pedro Henrique Santos Braga's portfolio. I'm a Fullstack Developer. Here you can find my projects, resume and contact information. Enjoy! :)"
           />
+          {process.env.NODE_ENV === "production" && (
+            <>
+              <Script
+                src="https://www.googletagmanager.com/gtag/js?id=G-4859XKBX83"
+                strategy="afterInteractive"
+              />
+              <Script id="google-analytics" strategy="afterInteractive">
+                {`
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'G-4859XKBX83');
+                `}
+              </Script>
+            </>
+          )}
         </Head>
         <body>
           <Main />
