@@ -50,7 +50,7 @@ const Skills: React.FC = () => {
   return (
     <Container id="my-skills">
       <h2>My Skills</h2>
-      <AnimationOnScroll animateOnce animateIn="animate__backInRight">
+      <AnimationOnScroll animateOnce animateIn="animate__zoomIn">
         <div id="skills-container">
           {skills.map(({ name, docsUrl, srcImg, altImg }) => (
             <div key={name} className="skill-container">
