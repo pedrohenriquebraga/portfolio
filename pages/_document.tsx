@@ -7,6 +7,7 @@ import Document, {
   DocumentInitialProps,
 } from "next/document";
 import Script from "next/script";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
@@ -36,30 +37,14 @@ export default class MyDocument extends Document {
     } finally {
       sheet.seal();
     }
-  }  
+  }
 
   render() {
     return (
       <Html lang="en-US">
         <title>Pedro Henrique | Fullstack developer | Frontend | Backend</title>
         <Head>
-        {process.env.NODE_ENV === "production" && (
-            <>
-              <Script
-                src="https://www.googletagmanager.com/gtag/js?id=G-4859XKBX83"
-                strategy="afterInteractive"
-              />
-              <Script id="google-analytics" strategy="afterInteractive">
-                {`
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-
-                  gtag('config', 'G-4859XKBX83');
-                `}
-              </Script>
-            </>
-          )}
+          <GoogleAnalytics strategy="lazyOnload" />
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#000000" />
           <meta property="og:type" content="website" />
@@ -75,6 +60,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+          <meta property="og:image" content="/banner.webp" />
           <meta property="og:site_name" content="Pedro Henrique's Portfolio" />
           <meta
             property="og:title"
@@ -88,7 +74,6 @@ export default class MyDocument extends Document {
             name="description"
             content="This is a Pedro Henrique Santos Braga's portfolio. I'm a Fullstack Developer. Here you can find my projects, resume and contact information. Enjoy! :)"
           />
-          
         </Head>
         <body>
           <Main />
