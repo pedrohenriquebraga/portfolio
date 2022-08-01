@@ -104,6 +104,7 @@ const Projects: React.FC = () => {
                 rel="external noreferrer"
               >
                 <h3>{slides[currentSlide].name}</h3>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={slides[currentSlide].image_url}
                   alt={slides[currentSlide].name}
