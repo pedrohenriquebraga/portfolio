@@ -18,13 +18,13 @@ Caso queira acompanhar o desenvolvimento do app, basta [acessar o repositório](
 
 ## ⚡ As funcionalidades presentes no app
 
-Criar grupos públicos ou 100% privados
-Todos os arquivos enviados são salvos na nuvem
-Baixo consumo de internet e armazenamento
-Envio de até **12OMB** de arquivos
-Sistema de cargos com 4 níveis de hierarquia
-Envio de mensagens de voz
-Buscador de grupos (possibilitando uma maior chance de crescimento na plataforma)
+- Criar grupos públicos ou 100% privados
+- Todos os arquivos enviados são salvos na nuvem
+- Baixo consumo de internet e armazenamento
+- Envio de até **12OMB** de arquivos
+- Sistema de cargos com 4 níveis de hierarquia
+- Envio de mensagens de voz
+- Buscador de grupos (possibilitando uma maior chance de crescimento na plataforma)
 
 ![Saturn Chat Upload File Image Demonstration In The Chat](/posts/saturn-chat-upload-file.jpeg)
 
