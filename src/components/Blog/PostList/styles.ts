@@ -33,9 +33,21 @@ export const PostCard = styled.a`
   h3 {
     font-size: 1.6rem;
     margin: 1rem 0;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    overflow: hidden;
   }
 
   #description {
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    word-break: break-word;
+    overflow: hidden;
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
   }
