@@ -9,6 +9,14 @@ const nextConfig = {
       pure: true,
     },
   },
+  redirects: async () => [
+    {
+      source: '/:path*',
+      has: [{ type: 'host', value: `www.${process.env.NEXT_PUBLIC_DOMAIN_URL}` }],
+      destination: `https://${process.env.NEXT_PUBLIC_DOMAIN_URL}/:path*`,
+      permanent: true
+    }
+  ]
 }
 
 module.exports = nextConfig
