@@ -33,15 +33,15 @@ export const Container = styled.main`
     }
 
     h4 {
-      font-size: 1.7rem;
+      font-size: 1.8rem;
     }
 
     h5 {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
 
     h6 {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
     }
 
     #main-title {
@@ -81,7 +81,7 @@ export const Container = styled.main`
 
       p {
         font-size: 1.8rem;
-        margin: 1.2rem 0;
+        margin: 1.5rem 0;
       }
 
       a {
