@@ -10,6 +10,7 @@ const CustomImage = ({ src, ...props }: any) => {
       layout='responsive'
       width={1920}
       height={1080}
+      quality={70}
     />
   );
 }

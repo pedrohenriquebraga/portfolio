@@ -4,7 +4,7 @@ import React from 'react';
 const CustomLink = ({ as, href, ...props }: any) => {
   return (
     <Link href={href}>
-      <a {...props} />
+      <a {...props} rel="external noreferrer" />
     </Link>
   );
 }
