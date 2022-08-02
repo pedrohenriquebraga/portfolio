@@ -7,7 +7,6 @@ import Document, {
   DocumentInitialProps,
 } from "next/document";
 import Script from "next/script";
-import { GoogleAnalytics } from "nextjs-google-analytics";
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
@@ -43,7 +42,25 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <GoogleAnalytics strategy="beforeInteractive" />
+          {process.env.NODE_ENV === "production" && (
+            <>
+              {/* Google tag (gtag.js) */}
+              <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+              />
+              <script>
+                {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+    
+                gtag('config', '${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}');
+            `}
+              </script>
+            </>
+          )}
+
           <meta charSet="utf-8" />
           <meta name="theme-color" content="#000000" />
           <meta property="og:type" content="website" />
