@@ -2,7 +2,7 @@
 title: "Como desenvolvi um blog usando NextJs"
 date: "01/08/2022"
 author: "Pedro Henrique"
-description: "Olá, eu sou o Pedro Henrique, desenvolvedor Fullstack. Este blog faz parte do meu portfólio e hoje venho apresentar ele a vocês e também mostrar como ele foi desenvolvido!"
+description: "Olá, eu sou o Pedro Henrique, desenvolvedor Fullstack. Hoje venho apresentar a vocês meu blog e também mostrar como ele foi desenvolvido!"
 banner: "/posts/looking-post.png"
 ---
 
@@ -26,7 +26,7 @@ Até que agora no ano de 2022, após construir meu [portfólio](/) em **NextJS**
 
 ![NextJs Logo](/posts/nextjs-logo.png)
 
-O principal framework utilizado foi o **[NextJS](https://nextjs.org/)**. Ele basicamente é usado para gerar páginas estáticas (como este post, por exemplo), que diferente do ReactJs, gera páginas dinâmicas através do Javascript, prejudicando assim o SEO das páginas.
+O principal framework utilizado foi o [NextJS](https://nextjs.org/). Ele basicamente é usado para gerar páginas estáticas (como este post, por exemplo), que diferente do ReactJs, gera páginas dinâmicas através do Javascript, prejudicando assim o SEO das páginas.
 
 NextJs também é um grande aliado a performance do site, pois gera todo o código HTML nos servidores da Vercel (o chamado SSR) fazendo assim com que a página seja entregue ao navegador já pronta pra ser renderizada. Ele também ajuda na exibição de imagens, otimizando elas da melhor forma para cada dispositivo e ajustando melhor o tamanho e qualidade de cada imagem.
 

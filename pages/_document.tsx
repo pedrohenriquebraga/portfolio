@@ -41,7 +41,7 @@ export default class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang="en-US">
+      <Html>
         <Head>
           <GoogleAnalytics strategy="beforeInteractive" />
           <meta charSet="utf-8" />
