@@ -45,7 +45,7 @@ export const Container = styled.main`
     }
 
     #main-title {
-      font-size: 3rem;
+      font-size: 3.5rem;
       color: #000;
       margin: 0;
     }

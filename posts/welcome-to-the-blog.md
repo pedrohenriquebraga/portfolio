@@ -18,9 +18,9 @@ Pensei muito em usar plataformas como o _Medium_, _Blogguer_ e outros criadores 
 
 Até que agora no ano de 2022, após construir meu [portfólio](/) em **NextJS**, vi que tinha um bom website em minhas mãos que poderia ser usado para criar um blog. Pois além de ajudar as pessoas a me conhecerem, também pode ser usado para publicar conteúdos que em geral não daria em outras plataformas.
 
-# Desenvolvimento
+## Como foi desenvolvido
 
-## O que foi usado?
+### O que foi usado?
 
 ![NextJs Logo](/posts/nextjs-logo.png)
 

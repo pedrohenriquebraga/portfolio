@@ -11,16 +11,23 @@ const Posts = ({ posts }: { posts: Post[] }) => {
   return (
     <>
       <Head>
-        <title>Postagens do Blog | Pedro Henrique</title>
+        <title>Blog Posts | Pedro Henrique</title>
+        <meta
+          name="description"
+          content="Look all posts of blog. Develop and tech content"
+        />
         <meta property="og:site_name" content="Pedro Henrique's Blog" />
+        <meta property="og:title" content="Blog Posts | Pedro Henrique" />
+        <meta
+          property="og:description"
+          content="Look all posts of blog. Develop and tech content"
+        />
       </Head>
-      <body>
-        <Container>
-          <BlogHeader />
-          <Body posts={posts} />
-          <Footer />
-        </Container>
-      </body>
+      <Container>
+        <BlogHeader />
+        <Body posts={posts} />
+        <Footer />
+      </Container>
     </>
   );
 };

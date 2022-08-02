@@ -17,11 +17,9 @@ const PostPage: React.FC<Post> = (post) => {
         <meta property="og:image" content={post.banner} />
         <meta property="og:site_name" content="Pedro Henrique's Blog" />
       </Head>
-      <body>
-        <BlogHeader />
-        <Body post={post} />
-        <Footer />
-      </body>
+      <BlogHeader />
+      <Body post={post} />
+      <Footer />
     </>
   );
 };

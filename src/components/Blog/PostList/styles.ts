@@ -11,7 +11,6 @@ export const Container = styled.main`
     flex-wrap: wrap;
     margin-top: 2rem;
     align-items: center;
-    justify-content: center;
     margin-bottom: 2rem;
   }
 `;
