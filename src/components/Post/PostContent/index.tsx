@@ -3,7 +3,6 @@ import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 import CustomLink from "../customLink";
 import CustomImage from "../customImage";
-import readingtime from "reading-time";
 import { Post } from "types/interfaces";
 import { Container } from "./styles";
 
@@ -19,7 +18,7 @@ const PostContent = ({ post }: { post: Post }) => {
         <div id="post-infos">
           <p id="date"><FiCalendar /> {post.date}</p>
           <p id="author"><FiUser /> {post.author}</p>
-          <p id="read-time"><FiClock /> Approximately {post.readingTime} minutes</p>
+          <p id="read-time"><FiClock /> Approximately {Math.ceil(post.readingTime)} minutes</p>
         </div>
         <Image
           id="banner"
