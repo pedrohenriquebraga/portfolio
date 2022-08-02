@@ -1,7 +1,8 @@
 import { promises as fs } from "fs";
+import { Post } from "types/interfaces";
 import matter from "gray-matter";
 import path from "path";
-import { Post } from "types/interfaces";
+import readingTime from "reading-time";
 
 const getPosts = async (): Promise<Post[]> => {
   const postsDirectory = path.join(process.cwd(), "posts")
@@ -12,6 +13,7 @@ const getPosts = async (): Promise<Post[]> => {
       const filePath = path.join(postsDirectory, filename)
       const fileContents = await fs.readFile(filePath, "utf-8")
       const document = matter(fileContents)
+      const readingTimeMinutes = readingTime(document.content).minutes
       
       return {
         slug: filename.replace(/\.md$/, ""),
@@ -20,6 +22,7 @@ const getPosts = async (): Promise<Post[]> => {
         date: document.data.date,
         author: document.data.author,
         banner: document.data.banner,
+        readingTime: readingTimeMinutes,
         markdown: document.content
       } as Post
     })

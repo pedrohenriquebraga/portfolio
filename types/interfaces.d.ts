@@ -5,5 +5,6 @@ export interface Post {
   date: string;
   author: string;
   banner: string;
+  readingTime: number;
   markdown: string;
 }

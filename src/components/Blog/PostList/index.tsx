@@ -11,8 +11,6 @@ const PostList = ({ posts }: { posts: Post[] }) => {
       <h2>Posts</h2>
       <div id="post-list">
         {posts.map((post, index) => {
-          const { minutes } = readTime(post.markdown);
-
           return (
             <Link key={index} href={`/blog/posts/${post.slug}`}>
               <PostCard>
@@ -26,7 +24,7 @@ const PostList = ({ posts }: { posts: Post[] }) => {
                 </p>
                 <p id="read-time">
                   <FiClock style={{ marginTop: 10 }} /> Approximately{" "}
-                  {Math.ceil(minutes)} minutes
+                  {Math.ceil(post.readingTime)} minutes
                 </p>
               </PostCard>
             </Link>

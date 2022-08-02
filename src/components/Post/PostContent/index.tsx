@@ -11,11 +11,6 @@ import { FiClock, FiUser, FiCalendar } from "react-icons/fi";
 
 
 const PostContent = ({ post }: { post: Post }) => {
-  const readTimeMinutes = useMemo(
-    () => Math.ceil(readingtime(post.markdown).minutes),
-    [post.markdown]
-  );
-
   return (
     <Container>
       <div id="post">
@@ -24,7 +19,7 @@ const PostContent = ({ post }: { post: Post }) => {
         <div id="post-infos">
           <p id="date"><FiCalendar /> {post.date}</p>
           <p id="author"><FiUser /> {post.author}</p>
-          <p id="read-time"><FiClock /> Approximately {readTimeMinutes} minutes</p>
+          <p id="read-time"><FiClock /> Approximately {post.readingTime} minutes</p>
         </div>
         <Image
           id="banner"
