@@ -4,5 +4,6 @@ export interface Post {
   description: string;
   date: string;
   author: string;
+  banner: string;
   markdown: string;
 }

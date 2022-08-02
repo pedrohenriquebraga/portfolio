@@ -1,20 +1,26 @@
+import BlogHeader from "@components/Blog/BlogHeader";
+import Footer from "@components/Footer";
+import Body from "@components/Post/Body";
 import Head from "next/head";
 import React from "react";
-import ReactMarkdown from "react-markdown";
 import getPosts from "src/lib/posts";
 import { Post } from "types/interfaces";
 
-// import { Container } from './styles';
-
-const PostPage: React.FC<Post> = ({ title, markdown }) => {
+const PostPage: React.FC<Post> = (post) => {
   return (
     <>
       <Head>
-        <title>{title} | Pedro Henrique</title>
+        <title>{post.title} | Pedro Henrique</title>
+        <meta name="description" content={post.description} />
+        <meta property="og:description" content={post.description} />
+        <meta property="og:title" content={post.title} />
+        <meta property="og:image" content={post.banner} />
+        <meta property="og:site_name" content="Pedro Henrique's Blog" />
       </Head>
       <body>
-        <h1>{title}</h1>
-        <ReactMarkdown>{markdown}</ReactMarkdown>
+        <BlogHeader />
+        <Body post={post} />
+        <Footer />
       </body>
     </>
   );

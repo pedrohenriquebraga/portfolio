@@ -12,6 +12,7 @@ const Posts = ({ posts }: { posts: Post[] }) => {
     <>
       <Head>
         <title>Postagens do Blog | Pedro Henrique</title>
+        <meta property="og:site_name" content="Pedro Henrique's Blog" />
       </Head>
       <body>
         <Container>

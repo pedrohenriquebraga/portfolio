@@ -25,8 +25,8 @@ const PostList = ({ posts }: { posts: Post[] }) => {
                   <FiUser style={{ marginTop: 10 }} /> {post.author}
                 </p>
                 <p id="read-time">
-                  <FiClock style={{ marginTop: 10 }} /> Approximately {minutes}{" "}
-                  minutes
+                  <FiClock style={{ marginTop: 10 }} /> Approximately{" "}
+                  {Math.ceil(minutes)} minutes
                 </p>
               </PostCard>
             </Link>

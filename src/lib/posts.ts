@@ -19,6 +19,7 @@ const getPosts = async (): Promise<Post[]> => {
         description: document.data.description,
         date: document.data.date,
         author: document.data.author,
+        banner: document.data.banner,
         markdown: document.content
       } as Post
     })
