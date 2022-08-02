@@ -72,6 +72,9 @@ const Header: React.FC = () => {
           <a href="#contact-me" rel="internal" className="nav-button">
             Contact me
           </a>
+          <Link href="/blog/posts">
+            <a className="nav-button">Blog</a>
+          </Link>
         </div>
         <div id="social-buttons-container">
           {socialNetworks.map(({ name, url, icon }) => (

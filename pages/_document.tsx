@@ -56,7 +56,7 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
           {/* eslint-disable-next-line @next/next/no-page-custom-font */}
           <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;600;700&display=swap"
             rel="stylesheet"
           />
           <link rel="icon" href="/favicon.ico" type="image/x-icon" />
