@@ -4,6 +4,7 @@ import readTime from "reading-time";
 import { Post } from "types/interfaces";
 import { Container, PostCard } from "./styles";
 import { FiClock, FiUser, FiCalendar } from "react-icons/fi";
+import Image from "next/image";
 
 const PostList = ({ posts }: { posts: Post[] }) => {
   return (
@@ -14,6 +15,15 @@ const PostList = ({ posts }: { posts: Post[] }) => {
           return (
             <Link key={index} href={`/blog/posts/${post.slug}`}>
               <PostCard>
+                <Image 
+                  src={post.banner}
+                  alt={`Banner of post "${post.title}"`}
+                  width={1920}
+                  height={1080}
+                  layout="responsive"
+                  quality={65}
+                  id="banner"
+                />
                 <h3>{post.title}</h3>
                 <p id="description">{post.description}</p>
                 <p id="date">
