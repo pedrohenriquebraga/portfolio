@@ -2,7 +2,7 @@
 title: "Como desenvolvi um blog usando NextJs"
 date: "01/08/2022"
 author: "Pedro Henrique"
-description: "Olá, eu sou o Pedro Henrique, desenvolvedor Fullstack e estudante de 17 anos. Este blog faz parte do portfólio e hoje venho apresentar ele a vocês e também mostrar como ele foi desenvolvido!"
+description: "Olá, eu sou o Pedro Henrique, desenvolvedor Fullstack. Este blog faz parte do meu portfólio e hoje venho apresentar ele a vocês e também mostrar como ele foi desenvolvido!"
 banner: "/posts/looking-post.png"
 ---
 
