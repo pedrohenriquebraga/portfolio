@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -12,6 +13,7 @@
     "animate.css": "^4.1.1",
     "gray-matter": "^4.0.3",
     "next": "12.2.3",
+    "next-sitemap": "^3.1.15",
     "nextjs-google-analytics": "^2.0.0",
     "react": "18.2.0",
     "react-animation-on-scroll": "^5.1.0",
