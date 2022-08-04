@@ -8,7 +8,7 @@ export const Container = styled.header`
   width: 100%;
   z-index: 5;
 
-  padding: 1.5rem 4rem;
+  padding: 2rem 3rem;
   background-color: #ffffff;
   box-shadow: 1px 1px 5px #00000055;
 
@@ -24,6 +24,24 @@ export const Container = styled.header`
         font-size: 2rem;
         font-weight: 600;
       }
+    }
+  }
+
+  nav {
+    a {
+      &:not(:first-child) {
+        margin-left: 3rem;
+      }
+
+      &:hover {
+        color: #1d1ef9;
+        transition: 300ms;
+      }
+
+      font-size: 17px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #19162b;
     }
   }
 `;

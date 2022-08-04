@@ -1,4 +1,3 @@
-import "animate.css/animate.min.css";
 import { GlobalStyle } from '@styles/global'
 import { Responsive } from '@styles/responsive'
 import type { AppProps } from 'next/app'

@@ -1,3 +1,4 @@
+import "animate.css/animate.min.css";
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
@@ -20,4 +21,4 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: "Poppins", sans-serif;
   }
-`
+`;

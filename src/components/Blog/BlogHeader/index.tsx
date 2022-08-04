@@ -19,6 +19,11 @@ const BlogHeader: React.FC = () => {
           </a>
         </Link>
       </div>
+      <nav id="links-container">
+        <Link href="/">
+          <a>Portfolio</a>
+        </Link>
+      </nav>
     </Container>
   );
 }

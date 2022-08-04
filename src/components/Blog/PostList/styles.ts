@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.main`
-  padding: 4rem;
+  padding: 3rem;
   h2 {
     font-size: 2rem;
   }
@@ -11,12 +11,14 @@ export const Container = styled.main`
     flex-wrap: wrap;
     margin-top: 2rem;
     align-items: center;
+    justify-content: center;
     margin-bottom: 2rem;
   }
 `;
 
 export const PostCard = styled.a`
-  width: 30rem;
+  width: 100%;
+  max-width: 35rem;
   cursor: pointer;
   background-color: #f3f3f3;
   padding: 2rem;
