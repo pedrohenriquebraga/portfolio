@@ -5,6 +5,19 @@ export const Container = styled.main`
   justify-content: center;
   padding-top: 12rem;
 
+  .go-back {
+    margin: 1rem 0;
+    a {
+      font-size: 1.6rem;
+      text-decoration: none;
+      color: #565656;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
   #post {
     width: 100%;
     max-width: 70rem;

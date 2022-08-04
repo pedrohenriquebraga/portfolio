@@ -19,4 +19,11 @@ export const Container = styled.footer`
       text-decoration: underline;
     }
   }
+
+  #social-networks {
+    a {
+      font-size: 2.3rem;
+      margin: 0 .5rem;
+    }
+  }
 `;

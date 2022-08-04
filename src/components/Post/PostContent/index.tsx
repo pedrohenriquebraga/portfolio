@@ -6,19 +6,30 @@ import CustomImage from "../customImage";
 import { Post } from "types/interfaces";
 import { Container } from "./styles";
 
-import { FiClock, FiUser, FiCalendar } from "react-icons/fi";
-
+import { FiClock, FiUser, FiCalendar, FiArrowLeft } from "react-icons/fi";
+import Link from "next/link";
 
 const PostContent = ({ post }: { post: Post }) => {
   return (
     <Container>
       <div id="post">
+        <div className="go-back">
+          <Link href="/blog/posts">
+            <a><FiArrowLeft style={{ paddingTop: 2 }} /> Back to posts</a>
+          </Link>
+        </div>
         <h1 id="main-title">{post.title}</h1>
         <p id="description">{post.description}</p>
         <div id="post-infos">
-          <p id="date"><FiCalendar /> {post.date}</p>
-          <p id="author"><FiUser /> {post.author}</p>
-          <p id="read-time"><FiClock /> Approximately {Math.ceil(post.readingTime)} minutes</p>
+          <p id="date">
+            <FiCalendar /> {post.date}
+          </p>
+          <p id="author">
+            <FiUser /> {post.author}
+          </p>
+          <p id="read-time">
+            <FiClock /> Approximately {Math.ceil(post.readingTime)} minutes
+          </p>
         </div>
         <Image
           id="banner"
@@ -39,6 +50,11 @@ const PostContent = ({ post }: { post: Post }) => {
           >
             {post.markdown}
           </ReactMarkdown>
+        </div>
+        <div className="go-back">
+          <Link href="/blog/posts">
+            <a><FiArrowLeft style={{ paddingTop: 2 }} /> Back to posts</a>
+          </Link>
         </div>
       </div>
     </Container>
