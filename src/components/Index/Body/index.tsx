@@ -1,5 +1,6 @@
 import React from 'react';
 import About from '../About';
+import CallToBlog from '../CallToBlog';
 import Contact from '../Contact';
 import Presentation from '../Presentation';
 import Projects from '../Projects';
@@ -15,6 +16,7 @@ const Body: React.FC = () => {
       <Skills />
       <Projects />
       <Contact />
+      <CallToBlog />
     </Container>
   );
 }

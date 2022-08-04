@@ -33,9 +33,11 @@ const Posts = ({ posts }: { posts: Post[] }) => {
 };
 
 export async function getStaticProps() {
+  const posts = await getPosts();
+  
   return {
     props: {
-      posts: await getPosts(),
+      posts,
     },
   };
 }
