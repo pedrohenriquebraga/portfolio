@@ -6,5 +6,6 @@ export const Container = styled.main`
   height: 100vh;
   flex: 1;
 
-  background: url(/my-birthday-background.jpg);
+  background: url(/my-birthday-background.jpg) no-repeat;
+  background-size: cover;
 `;
