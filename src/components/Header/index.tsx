@@ -8,10 +8,11 @@ import Link from "next/link";
 
 interface IHeader {
   hiddenNav?: boolean;
+  hiddenShadow?: boolean;
   backColor?: string;
 }
 
-const Header: React.FC<IHeader> = ({ hiddenNav, backColor }) => {
+const Header: React.FC<IHeader> = ({ hiddenNav, hiddenShadow, backColor }) => {
   const [openHeader, setOpenHeader] = useState(false);
   const socialNetworks = useMemo(
     () => [
@@ -40,7 +41,10 @@ const Header: React.FC<IHeader> = ({ hiddenNav, backColor }) => {
 
   return (
     <Container
-      style={{ backgroundColor: backColor || "#fff" }}
+      style={{
+        backgroundColor: backColor || "#fff",
+        boxShadow: hiddenShadow ? "none" : undefined,
+      }}
       openHeader={openHeader}
     >
       <div id="logo">

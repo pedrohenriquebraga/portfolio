@@ -15,7 +15,7 @@ export const Container = styled.div`
     padding: 2rem;
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 4rem;
     }
 
     p {

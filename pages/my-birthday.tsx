@@ -26,7 +26,7 @@ const MyBirthday: React.FC = () => {
       </Head>
       <body>
         <Container>
-          <Header hiddenNav backColor="#3a629faa" />
+          <Header hiddenNav hiddenShadow backColor="#00000000" />
           <Body />
           <Footer />
         </Container>

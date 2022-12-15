@@ -7,7 +7,7 @@ const Countdown: React.FC = () => {
   const [isBirthday, setIsBirthday] = useState(false);
   const [countdown, setCountdown] = useState("Calculating...");
 
-  const date = useMemo(() => new Date(), [])
+  const date = useMemo(() => new Date(), []);
   const currentYear = date.getFullYear();
 
   useEffect(() => {
@@ -20,7 +20,13 @@ const Countdown: React.FC = () => {
 
     const nextBirthdayDate = isAfter(date, currentYearBirthday)
       ? new Date(`04/14/${currentYear + 1}`)
-      : currentYearBirthday;      
+      : currentYearBirthday;
+
+    setCountdown(
+      formatDistanceToNow(nextBirthdayDate, {
+        includeSeconds: true,
+      })
+    );
 
     const countdownInterval = setInterval(() => {
       const formatCountdown = formatDistanceToNow(nextBirthdayDate, {
@@ -30,17 +36,21 @@ const Countdown: React.FC = () => {
     }, 1000);
 
     return () => {
-      clearInterval(countdownInterval)
-    }
+      clearInterval(countdownInterval);
+    };
   }, [currentYear, date]);
 
   return (
     <Container>
       {!isBirthday && (
         <div id="countdown-container">
-          <p>Exactly missing</p>
-          <h1>{countdown.toUpperCase()}</h1>
-          <p>
+          <p className="animate__animated animate__fadeInRight animate__delay-1s">
+            Exactly missing
+          </p>
+          <h1 className="animate__animated animate__zoomInDown animate__delay-0.5s">
+            {countdown.toUpperCase()}
+          </h1>
+          <p className="animate__animated animate__fadeInLeft animate__delay-1s">
             for my{" "}
             <strong>
               18<sup>th</sup> birthday
