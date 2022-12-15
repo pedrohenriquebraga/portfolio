@@ -20,7 +20,7 @@ export const Container = styled.header<{ openHeader: boolean }>`
   padding: 2rem 3rem;
   background-color: #ffffff;
   box-shadow: 1px 1px 5px #00000055;
-  
+
   animation: ${ShowHeader} 500ms ease-in-out;
 
   nav {
@@ -60,21 +60,20 @@ export const Container = styled.header<{ openHeader: boolean }>`
           transition: 300ms;
         }
 
-        font-size: 17px;
+        font-size: 1.6rem;
         font-weight: 600;
         text-decoration: none;
         color: #19162b;
       }
     }
 
-    #social-buttons-container {   
+    #social-buttons-container {
       margin-top: 1rem;
       .social-button {
-
         &:not(:first-child) {
           margin-left: 2rem;
         }
-        
+
         &:hover {
           color: #1d1ef9;
           transition: 300ms;
@@ -101,10 +100,9 @@ export const Container = styled.header<{ openHeader: boolean }>`
     }
   }
 
-  @media (max-width: 920px) {
+  @media (max-width: 1050px) {
     display: flex;
     padding: 2rem;
-    
 
     nav {
       display: ${(props) => (!props.openHeader ? "none" : "flex")};

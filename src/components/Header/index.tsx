@@ -6,7 +6,12 @@ import { Container } from "./styles";
 import Image from "next/image";
 import Link from "next/link";
 
-const Header: React.FC = () => {
+interface IHeader {
+  hiddenNav?: boolean;
+  backColor?: string;
+}
+
+const Header: React.FC<IHeader> = ({ hiddenNav, backColor }) => {
   const [openHeader, setOpenHeader] = useState(false);
   const socialNetworks = useMemo(
     () => [
@@ -34,7 +39,10 @@ const Header: React.FC = () => {
   };
 
   return (
-    <Container openHeader={openHeader}>
+    <Container
+      style={{ backgroundColor: backColor || "#fff" }}
+      openHeader={openHeader}
+    >
       <div id="logo">
         <Link href="/">
           <a rel="internal">
@@ -43,59 +51,67 @@ const Header: React.FC = () => {
               alt="Pedro Henrique portfolio's logo"
               width={60}
               height={60}
+              style={{ borderRadius: "50%" }}
             />
           </a>
         </Link>
       </div>
-      <nav>
-        <div id="close-header">
-          <button onClick={handleOpenHeader}>
-            <span>
-              <FiArrowLeft />
-            </span>{" "}
-            Close
-          </button>
-        </div>
-        <div id="nav-buttons-container">
-          <a href="#welcome" rel="internal" className="nav-button">
-            Welcome
-          </a>
-          <a href="#about" rel="internal" className="nav-button">
-            About me
-          </a>
-          <a href="#my-skills" rel="internal" className="nav-button">
-            My skills
-          </a>
-          <a href="#my-projects" rel="internal" className="nav-button">
-            My projects
-          </a>
-          <a href="#contact-me" rel="internal" className="nav-button">
-            Contact me
-          </a>
-          <Link href="/blog/posts" rel="internal">
-            <a className="nav-button">Blog</a>
-          </Link>
-        </div>
-        <div id="social-buttons-container">
-          {socialNetworks.map(({ name, url, icon }) => (
-            <a
-              key={name}
-              title={`Visit my ${name} page`}
-              href={url}
-              target="_blank"
-              rel="external noopener noreferrer"
-              className="social-button"
-            >
-              {icon}
-            </a>
-          ))}
-        </div>
-      </nav>
-      <div id="menu-button-container" onClick={handleOpenHeader}>
-        <button>
-          <FiMenu />
-        </button>
-      </div>
+      {!hiddenNav && (
+        <>
+          <nav>
+            <div id="close-header">
+              <button onClick={handleOpenHeader}>
+                <span>
+                  <FiArrowLeft />
+                </span>{" "}
+                Close
+              </button>
+            </div>
+            <div id="nav-buttons-container">
+              <a href="#welcome" rel="internal" className="nav-button">
+                Welcome
+              </a>
+              <a href="#about" rel="internal" className="nav-button">
+                About me
+              </a>
+              <a href="#my-skills" rel="internal" className="nav-button">
+                My skills
+              </a>
+              <a href="#my-projects" rel="internal" className="nav-button">
+                My projects
+              </a>
+              <a href="#contact-me" rel="internal" className="nav-button">
+                Contact me
+              </a>
+              <Link href="/blog/posts" rel="internal">
+                <a className="nav-button">Blog</a>
+              </Link>
+              <Link href="/my-birthday" rel="internal">
+                <a className="nav-button">My birthday</a>
+              </Link>
+            </div>
+            <div id="social-buttons-container">
+              {socialNetworks.map(({ name, url, icon }) => (
+                <a
+                  key={name}
+                  title={`Visit my ${name} page`}
+                  href={url}
+                  target="_blank"
+                  rel="external noopener noreferrer"
+                  className="social-button"
+                >
+                  {icon}
+                </a>
+              ))}
+            </div>
+          </nav>
+          <div id="menu-button-container" onClick={handleOpenHeader}>
+            <button>
+              <FiMenu />
+            </button>
+          </div>
+        </>
+      )}
     </Container>
   );
 };
