@@ -44,13 +44,9 @@ const Countdown: React.FC = () => {
     <Container>
       {!isBirthday && (
         <div id="countdown-container">
-          <p className="animate__animated animate__fadeInRight animate__delay-1s">
-            Exactly missing
-          </p>
-          <h1 className="animate__animated animate__zoomInDown animate__delay-0.5s">
-            {countdown.toUpperCase()}
-          </h1>
-          <p className="animate__animated animate__fadeInLeft animate__delay-1s">
+          <p className="animate__animated animate__fadeIn animated__delay-1.5s">Exactly missing</p>
+          <h1 className="animate__animated animate__pulse">{countdown.toUpperCase()}</h1>
+          <p className="animate__animated animate__fadeIn animated__delay-1.5s">
             for my{" "}
             <strong>
               18<sup>th</sup> birthday
