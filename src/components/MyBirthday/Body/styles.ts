@@ -5,5 +5,7 @@ export const Container = styled.main`
   height: 100vh;
   flex: 1;
 
+  overflow-x: hidden;
+
   background: url(/my-birthday-background.jpg);
 `;

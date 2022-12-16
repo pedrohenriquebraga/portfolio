@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
+import Confetti from 'react-confetti';
 import { formatDistanceToNow, isToday, isAfter } from "date-fns";
 
+import { useWindowSize } from "react-use"
 import { Container } from "./styles";
 
 const Countdown: React.FC = () => {
   const [isBirthday, setIsBirthday] = useState(false);
   const [countdown, setCountdown] = useState("Calculating...");
   const [countdownInterval, setCountdownInterval] = useState<NodeJS.Timer>();
+
+  const { width, height } = useWindowSize();
 
   useEffect(() => {
     const date = new Date();
@@ -69,6 +73,7 @@ const Countdown: React.FC = () => {
         </div>
       ) : (
         <div id="birthday-container">
+          <Confetti gravity={0.07} friction={0.98} width={width - 20} height={height} />
           <h1>🎉 Today is my birthday 🎉</h1>
         </div>
       )}
