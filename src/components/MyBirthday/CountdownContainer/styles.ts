@@ -24,4 +24,10 @@ export const Container = styled.div`
       font-weight: 200;
     }
   }
+
+  #birthday-container {
+    h1 {
+      font-size: 3rem;
+    }
+  }
 `;
