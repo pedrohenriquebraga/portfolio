@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Confetti from 'react-confetti';
+import Confetti from "react-confetti";
 import { formatDistanceToNow, isToday, isAfter } from "date-fns";
+import { FiInstagram, FiMessageSquare } from "react-icons/fi";
 
-import { useWindowSize } from "react-use"
+import { useWindowSize } from "react-use";
 import { Container } from "./styles";
+import Link from "next/link";
 
 const Countdown: React.FC = () => {
   const [isBirthday, setIsBirthday] = useState(false);
@@ -73,8 +75,33 @@ const Countdown: React.FC = () => {
         </div>
       ) : (
         <div id="birthday-container">
-          <Confetti gravity={0.07} friction={0.98} width={width - 20} height={height} />
+          <Confetti
+            hidden={!isBirthday}
+            numberOfPieces={140}
+            gravity={0.07}
+            friction={0.98}
+            width={width - 20}
+            height={height}
+          />
           <h1>🎉 Today is my birthday 🎉</h1>
+          <p>How about leaving a message for me?</p>
+          <div id="send-message-buttons">
+            <a
+              href="https://instagram.com/pedro_henriquebraga"
+              rel="external noreferrer"
+              target="_blank"
+              className="send-message-button instagram"
+            >
+              <FiInstagram size={20} style={{ verticalAlign: "top" }} /> Send
+              message on Instagram
+            </a>
+            <Link href={"#"}>
+              <a className="send-message-button mural">
+                <FiMessageSquare size={20} style={{ verticalAlign: "top" }} />{" "}
+                Send message on Website
+              </a>
+            </Link>
+          </div>
         </div>
       )}
     </Container>
