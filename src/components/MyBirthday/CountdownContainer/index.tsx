@@ -60,6 +60,14 @@ const Countdown: React.FC = () => {
     <Container>
       {!isBirthday ? (
         <div id="countdown-container">
+          <Confetti
+            numberOfPieces={140}
+            gravity={0.07}
+            friction={0.98}
+            width={width - 20}
+            height={height}
+            colors={["#ffffff44"]}
+          />
           <p className="animate__animated animate__fadeIn animated__delay-1.5s">
             Exactly missing
           </p>
@@ -103,8 +111,8 @@ const Countdown: React.FC = () => {
             </Link>
             <Link href="/my-birthday/mural">
               <a className="send-message-button">
-                <FiInbox size={20} style={{ verticalAlign: "top" }} />{" "}
-                Access the Birthday Mural
+                <FiInbox size={20} style={{ verticalAlign: "top" }} /> Access
+                the Birthday Mural
               </a>
             </Link>
           </div>

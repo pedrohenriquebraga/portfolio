@@ -1,4 +1,16 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const CountdownAnimation = keyframes`
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -17,6 +29,7 @@ export const Container = styled.div`
 
     h1 {
       font-size: 4rem;
+      animation: ${CountdownAnimation} 3s alternate infinite;
     }
 
     p {
