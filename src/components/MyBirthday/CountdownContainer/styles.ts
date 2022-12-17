@@ -50,6 +50,9 @@ export const Container = styled.div`
         border-radius: 8px;
         margin: 1rem;
 
+        background-color: #fd5949;
+
+
         &.instagram {
           background: radial-gradient(
             circle at 30% 107%,

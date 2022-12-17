@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Confetti from "react-confetti";
 import { formatDistanceToNow, isToday, isAfter } from "date-fns";
-import { FiInstagram, FiMessageSquare } from "react-icons/fi";
+import { FiInstagram, FiMessageSquare, FiInbox } from "react-icons/fi";
 
 import { useWindowSize } from "react-use";
 import { Container } from "./styles";
@@ -95,10 +95,16 @@ const Countdown: React.FC = () => {
               <FiInstagram size={20} style={{ verticalAlign: "top" }} /> Send
               message on Instagram
             </a>
-            <Link href={"#"}>
+            <Link href="/my-birthday/mural/new">
               <a className="send-message-button mural">
                 <FiMessageSquare size={20} style={{ verticalAlign: "top" }} />{" "}
-                Send message on Website
+                Send message on Mural
+              </a>
+            </Link>
+            <Link href="/my-birthday/mural">
+              <a className="send-message-button">
+                <FiInbox size={20} style={{ verticalAlign: "top" }} />{" "}
+                Access the Birthday Mural
               </a>
             </Link>
           </div>
