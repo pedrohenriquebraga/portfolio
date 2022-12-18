@@ -61,7 +61,6 @@ const Countdown: React.FC = () => {
       {!isBirthday ? (
         <div id="countdown-container">
           <Confetti
-            numberOfPieces={140}
             gravity={0.07}
             friction={0.98}
             width={width - 20}
@@ -82,10 +81,9 @@ const Countdown: React.FC = () => {
           </p>
         </div>
       ) : (
-        <div id="birthday-container">
+        <div className="animate__animated animate__fadeIn" id="birthday-container">
           <Confetti
             hidden={!isBirthday}
-            numberOfPieces={140}
             gravity={0.07}
             friction={0.98}
             width={width - 20}

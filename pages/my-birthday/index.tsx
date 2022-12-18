@@ -1,11 +1,9 @@
+import React from "react";
+import Head from "next/head";
 import Footer from "@components/Footer";
 import Header from "@components/Header";
 import Body from "@components/MyBirthday/Body";
 import { Container } from "@styles/pages/my-birthday";
-import Head from "next/head";
-import React from "react";
-
-// import { Container } from './styles';
 
 const MyBirthday: React.FC = () => {
   return (
@@ -21,8 +19,8 @@ const MyBirthday: React.FC = () => {
           property="og:title"
           content="Countdown to my birthday 🎉 | Pedro Henrique | Fullstack developer | Frontend | Backend"
         />
-        <meta property="og:description" content="My birthday incoming!" />
-        <meta name="description" content="My birthday incoming!" />
+        <meta property="og:description" content="My birthday countdown and access for my Birthday Mural" />
+        <meta name="description" content="My birthday countdown and access for my Birthday Mural" />
       </Head>
       <body>
         <Container>
