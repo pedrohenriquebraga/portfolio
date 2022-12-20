@@ -7,26 +7,30 @@ const Form: React.FC = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
 
+  const [sendingPost, setSendingPost] = useState(false);
+
   const submitMessage = async (e: FormEvent) => {
+    setSendingPost(true);
     e.preventDefault();
 
     const data = {
       name,
-      message
-    }
+      message,
+    };
 
     const res = await fetch("/api/birthday-posts", {
       body: JSON.stringify(data),
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      method: "POST"
-    }).then(res => res.json())
+      method: "POST",
+    }).then((res) => res.json());
+    setSendingPost(false);
 
     if (res.success) {
-      Router.push("/my-birthday/mural", "/my-birthday/mural", {
-        
-      })
+      Router.push("/my-birthday/mural", {
+        pathname: "/my-birthday/mural"
+      });
     }
   };
 
@@ -53,7 +57,14 @@ const Form: React.FC = () => {
             required
           />
         </div>
-        <button type="submit">Send message</button>
+        <button
+          disabled={sendingPost || !name || !message}
+          type="submit"
+        >
+          {
+            sendingPost ? "Sending message..." : "Send message"
+          }
+        </button>
       </form>
     </Container>
   );

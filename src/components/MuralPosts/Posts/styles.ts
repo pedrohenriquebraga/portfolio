@@ -18,23 +18,21 @@ export const Container = styled.div`
   }
 
   #posts-container {
-    display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(auto, 30rem));
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
 
     .post-container {
-      align-self: flex-start;
       width: 30rem;
       background-color: #fafafa;
-      padding: 1.5rem;
-      border-radius: 5px;
+      padding: 2rem;
+      border-radius: 8px;
       box-shadow: -1px 1px 3px 2px #00000055;
-      border: 2px dashed #55555555;
       margin: 1rem;
 
       #message {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         font-style: italic;
         text-overflow: ellipsis;
 
@@ -52,15 +50,23 @@ export const Container = styled.div`
         font-weight: 600;
 
         span {
-          font-size: 1rem;
+          font-size: 1.1rem;
           font-weight: lighter;
           color: #555;
         }
       }
 
+      transition: 500ms;
       &:hover {
-        border: 2px solid #5863d8;
-        transition: 500ms;
+        background-color: #5863d8;
+        color: #fff;
+        
+        & #author {
+          span {
+            color: #ccc;
+          }
+          color: #fff;
+        }
       }
     }
   }

@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from "react";
+import Masonry from 'react-masonry-css'
 import { Container } from "./styles";
 
 type PostData = {
   name: string;
   message: string;
+};
+
+const breakpointColumnsObj = {
+  default: 4,
+  1276: 3,
+  900: 2,
+  620: 1
 };
 
 const Posts: React.FC = () => {
@@ -23,7 +31,7 @@ const Posts: React.FC = () => {
     <>
       <Container>
         <h2>{posts.length} Messages received</h2>
-        <div id="posts-container">
+        <Masonry breakpointCols={breakpointColumnsObj} className="posts-container" id="posts-container">
           {posts.map((post, index) => (
             <div
               key={index}
@@ -39,7 +47,7 @@ const Posts: React.FC = () => {
               </p>
             </div>
           ))}
-        </div>
+        </Masonry>
       </Container>
     </>
   );

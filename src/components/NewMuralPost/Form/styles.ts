@@ -54,10 +54,17 @@ export const Container = styled.div`
       background-color: #5863d8;
       color: #fff;
 
-      &:hover {
-        background-color: #5862c7;
-        transition: 500ms;
+      &:disabled {
+        background-color: #ccc;
       }
+
+      &:not(:disabled) {
+        &:hover {
+          background-color: #5862c7;
+          transition: 500ms;
+        }
+      }
+
     }
   }
 `;
