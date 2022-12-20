@@ -13,6 +13,7 @@
     "animate.css": "^4.1.1",
     "date-fns": "^2.29.3",
     "gray-matter": "^4.0.3",
+    "mongoose": "^6.8.0",
     "next": "12.2.3",
     "next-sitemap": "^3.1.15",
     "nextjs-google-analytics": "^2.0.0",

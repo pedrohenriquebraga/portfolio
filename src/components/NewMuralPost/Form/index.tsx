@@ -1,3 +1,4 @@
+import Router from "next/router";
 import React, { FormEvent, useState } from "react";
 
 import { Container } from "./styles";
@@ -9,13 +10,24 @@ const Form: React.FC = () => {
   const submitMessage = async (e: FormEvent) => {
     e.preventDefault();
 
-    const data = new FormData();
+    const data = {
+      name,
+      message
+    }
 
-    data.append("name", name);
-    data.append("message", message);
+    const res = await fetch("/api/birthday-posts", {
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST"
+    }).then(res => res.json())
 
-    console.log(data);
-    
+    if (res.success) {
+      Router.push("/my-birthday/mural", "/my-birthday/mural", {
+        
+      })
+    }
   };
 
   return (

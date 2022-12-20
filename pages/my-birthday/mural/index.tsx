@@ -22,13 +22,11 @@ const MuralPosts: React.FC = () => {
         <meta property="og:description" content="Check my birthday mural" />
         <meta name="description" content="Check my birthday mural" />
       </Head>
-      <body>
         <Container>
           <Header hiddenNav />
           <Body />
           <Footer />
         </Container>
-      </body>
     </>
   );
 };

@@ -18,12 +18,14 @@ export const Container = styled.div`
   }
 
   #posts-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 30rem));
+    justify-content: center;
 
     .post-container {
-      width: 33rem;
+      align-self: flex-start;
+      width: 30rem;
       background-color: #fafafa;
       padding: 1.5rem;
       border-radius: 5px;
@@ -34,7 +36,6 @@ export const Container = styled.div`
       #message {
         font-size: 1.6rem;
         font-style: italic;
-        height: 250px;
         text-overflow: ellipsis;
 
         span {
