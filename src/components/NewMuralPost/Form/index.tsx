@@ -29,7 +29,10 @@ const Form: React.FC = () => {
 
     if (res.success) {
       Router.push("/my-birthday/mural", {
-        pathname: "/my-birthday/mural"
+        pathname: "/my-birthday/mural",
+        query: {
+          "created-post": "1",
+        }
       });
     }
   };

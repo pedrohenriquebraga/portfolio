@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Confetti from "react-confetti";
-import { formatDistanceToNow, isToday, isAfter } from "date-fns";
+import { formatDistanceToNow, formatDistanceToNowStrict, isToday, isAfter } from "date-fns";
 import { FiInstagram, FiMessageSquare, FiInbox } from "react-icons/fi";
 
 import { useWindowSize } from "react-use";
@@ -8,7 +8,7 @@ import { Container } from "./styles";
 import Link from "next/link";
 
 const Countdown: React.FC = () => {
-  const [isBirthday, setIsBirthday] = useState(true);
+  const [isBirthday, setIsBirthday] = useState(false);
   const [countdown, setCountdown] = useState("Calculating...");
   const [countdownInterval, setCountdownInterval] = useState<NodeJS.Timer>();
 
@@ -29,8 +29,8 @@ const Countdown: React.FC = () => {
       : currentYearBirthday;
 
     setCountdown(
-      formatDistanceToNow(nextBirthdayDate, {
-        includeSeconds: true,
+      formatDistanceToNowStrict(nextBirthdayDate, {
+        unit: "day",
       })
     );
 
@@ -43,8 +43,8 @@ const Countdown: React.FC = () => {
         return;
       }
 
-      const formatCountdown = formatDistanceToNow(nextBirthdayDate, {
-        includeSeconds: true,
+      const formatCountdown = formatDistanceToNowStrict(nextBirthdayDate, {
+        unit: "day",
       });
       setCountdown(formatCountdown);
     }, 1000);
@@ -54,7 +54,7 @@ const Countdown: React.FC = () => {
     return () => {
       clearInterval(countdownInterval);
     };
-  }, []);
+  }, [countdownInterval]);
 
   return (
     <Container>

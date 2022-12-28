@@ -7,10 +7,24 @@ export const Container = styled.section`
 
   .button-container {
     display: flex;
-    
-
     cursor: pointer;
-    background-color: #1D1EF9;
+    background-color: #1d1ef9;
+
+    &.github {
+      background-color: #000;
+    }
+
+    &.instagram {
+      background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+      );
+    }
+
     padding: 1.2rem 3rem;
     border-radius: 8px;
 
@@ -31,9 +45,11 @@ export const Container = styled.section`
     }
 
     &:hover {
-      transition: 300ms;
-      transform: scale(1.05);
+      transform: scale(1.08);
+      box-shadow: 0px 4px 8px #00000044;
     }
+
+    transition: 300ms;
   }
 
   @media (max-width: 768px) {

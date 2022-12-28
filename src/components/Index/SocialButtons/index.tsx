@@ -8,11 +8,13 @@ const SocialButtons: React.FC = () => {
       {
         name: "Github",
         url: "https://github.com/pedrohenriquebraga",
+        className: "github",
         icon: <FaGithub />,
       },
       {
         name: "Instagram",
         url: "https://instagram.com/pedro_henriquebraga",
+        className: "instagram",
         icon: <FaInstagram />,
       },
     ],
@@ -27,7 +29,7 @@ const SocialButtons: React.FC = () => {
           href={button.url}
           rel="external noreferrer"
           target="_blank"
-          className="button-container"
+          className={`button-container ${button.className}`}
         >
           <span>{button.icon}</span> {button.name}
         </a>
