@@ -6,6 +6,7 @@ import getPosts from "src/lib/posts";
 import { Post } from "types/interfaces";
 import { Container } from "@styles/pages";
 import Footer from "@components/Footer";
+import { minutesToSeconds } from "date-fns";
 
 const Posts = ({ posts }: { posts: Post[] }) => {
   return (
@@ -39,6 +40,7 @@ export async function getStaticProps() {
     props: {
       posts,
     },
+    revalidate: minutesToSeconds(60)
   };
 }
 
