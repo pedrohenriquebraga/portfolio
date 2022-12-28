@@ -1,14 +1,14 @@
 import React from 'react';
-import Posts from '../Posts';
+import Posts, { PostData } from '../Posts';
 import Presentation from '../Presentation';
 
 import { Container } from './styles';
 
-const Body: React.FC = () => {
+const Body: React.FC<{ posts: PostData[] }> = ({ posts }) => {  
   return (
     <Container>
       <Presentation />
-      <Posts />
+      <Posts posts={posts} />
     </Container>
   );
 }

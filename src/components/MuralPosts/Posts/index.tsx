@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import Masonry from 'react-masonry-css'
+import Masonry from "react-masonry-css";
 import { Container } from "./styles";
 
-type PostData = {
+export type PostData = {
   name: string;
   message: string;
 };
@@ -11,27 +11,19 @@ const breakpointColumnsObj = {
   default: 4,
   1276: 3,
   900: 2,
-  620: 1
+  620: 1,
 };
 
-const Posts: React.FC = () => {
-  const [posts, setPosts] = useState<PostData[]>([]);
-
-  useEffect(() => {
-    (async () => {
-      const res = await fetch("/api/birthday-posts").then((res) => res.json());
-
-      if (res.success) {
-        setPosts(res.posts);
-      }
-    })();
-  }, []);
-
+const Posts: React.FC<{ posts: PostData[] }> = ({ posts }) => {
   return (
     <>
       <Container>
         <h2>{posts.length} Messages received</h2>
-        <Masonry breakpointCols={breakpointColumnsObj} className="posts-container" id="posts-container">
+        <Masonry
+          breakpointCols={breakpointColumnsObj}
+          className="posts-container"
+          id="posts-container"
+        >
           {posts.map((post, index) => (
             <div
               key={index}

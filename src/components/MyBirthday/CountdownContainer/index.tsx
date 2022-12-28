@@ -8,7 +8,7 @@ import { Container } from "./styles";
 import Link from "next/link";
 
 const Countdown: React.FC = () => {
-  const [isBirthday, setIsBirthday] = useState(false);
+  const [isBirthday, setIsBirthday] = useState(true);
   const [countdown, setCountdown] = useState("Calculating...");
   const [countdownInterval, setCountdownInterval] = useState<NodeJS.Timer>();
 
