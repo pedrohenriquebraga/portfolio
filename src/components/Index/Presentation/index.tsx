@@ -2,17 +2,19 @@ import React from "react";
 import SocialButtons from "../SocialButtons";
 import { FaArrowDown } from "react-icons/fa";
 import { Container, PresentationContainer } from "./styles";
+import { useTranslations } from "next-intl";
 
 const Presentation: React.FC = () => {
+
+  const t = useTranslations("home");
+
   return (
     <Container id="welcome">
       <PresentationContainer>
         <div id="right-side">
           <div id="title-container">
             <h1>
-              Hello, my <br /> name&apos;s Pedro Henrique. <br /> I&apos;m a fullstack{" "}
-              <br />
-              developer.
+            {t("presentation.title")}
             </h1>
           </div>
           <SocialButtons />
@@ -22,7 +24,7 @@ const Presentation: React.FC = () => {
           <span>
             <FaArrowDown />
           </span>{" "}
-          scroll down
+          {t("presentation.scroll_down")}
         </div>
       </PresentationContainer>
     </Container>

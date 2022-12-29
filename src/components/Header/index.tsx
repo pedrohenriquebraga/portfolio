@@ -5,6 +5,7 @@ import { FiMenu, FiArrowLeft } from "react-icons/fi";
 import { Container } from "./styles";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface IHeader {
   hiddenNav?: boolean;
@@ -16,7 +17,9 @@ const SCROLL_Y_TO_REDUCE_HEADER_OPACITY = 80
 
 const Header: React.FC<IHeader> = ({ hiddenNav, hiddenShadow, backColor }) => {
   const [openHeader, setOpenHeader] = useState(false);
-  const [reduceOpacity, setReduceOpacity] = useState(false)
+  const [reduceOpacity, setReduceOpacity] = useState(false);
+
+  const t = useTranslations("header")
 
   const socialNetworks = useMemo(
     () => [
@@ -63,7 +66,7 @@ const Header: React.FC<IHeader> = ({ hiddenNav, hiddenShadow, backColor }) => {
       style={{
         backgroundColor: backColor || "#fff",
         boxShadow: hiddenShadow || reduceOpacity ? "none" : undefined,
-        opacity: reduceOpacity ? 0.25 : 1
+        opacity: reduceOpacity && !openHeader ? 0.35 : 1
       }}
       openHeader={openHeader}
     >
@@ -88,30 +91,30 @@ const Header: React.FC<IHeader> = ({ hiddenNav, hiddenShadow, backColor }) => {
                 <span>
                   <FiArrowLeft />
                 </span>{" "}
-                Close
+                {t("nav.close_menu")}
               </button>
             </div>
             <div id="nav-buttons-container">
               <a href="#welcome" rel="internal" className="nav-button">
-                Welcome
+                {t("nav.welcome")}
               </a>
               <a href="#about" rel="internal" className="nav-button">
-                About me
+                {t("nav.about_me")}
               </a>
               <a href="#my-skills" rel="internal" className="nav-button">
-                My skills
+                {t("nav.my_skills")}
               </a>
               <a href="#my-projects" rel="internal" className="nav-button">
-                My projects
+                {t("nav.my_projects")}
               </a>
               <a href="#contact-me" rel="internal" className="nav-button">
-                Contact me
+                {t("nav.contact_me")}
               </a>
               <Link href="/blog/posts" rel="internal">
-                <a className="nav-button">Blog</a>
+                <a className="nav-button">{t("nav.blog")}</a>
               </Link>
               <Link href="/my-birthday" rel="internal">
-                <a className="nav-button">My birthday</a>
+                <a className="nav-button">{t("nav.my_birthday")}</a>
               </Link>
             </div>
             <div id="social-buttons-container">

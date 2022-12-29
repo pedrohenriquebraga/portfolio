@@ -3,6 +3,7 @@ import { Container } from "./styles";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const Skills: React.FC = () => {
   const skills = useMemo(
@@ -47,9 +48,11 @@ const Skills: React.FC = () => {
     []
   );
 
+  const t = useTranslations("home");
+
   return (
     <Container id="my-skills">
-      <h2>My Skills</h2>
+      <h2>{t("my_skills.title")}</h2>
       <AnimationOnScroll animateOnce animateIn="animate__zoomIn">
         <div id="skills-container">
           {skills.map(({ name, docsUrl, srcImg, altImg }) => (

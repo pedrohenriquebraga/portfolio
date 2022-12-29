@@ -4,6 +4,8 @@ import Footer from "@components/Footer";
 import Header from "@components/Header";
 import Body from "@components/MyBirthday/Body";
 import { Container } from "@styles/pages/my-birthday";
+import { useTranslations } from "next-intl";
+import { GetStaticPropsContext } from "next";
 
 const MyBirthday: React.FC = () => {
   return (
