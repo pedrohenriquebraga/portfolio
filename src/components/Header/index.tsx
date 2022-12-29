@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { FiMenu, FiArrowLeft } from "react-icons/fi";
 
@@ -12,8 +12,12 @@ interface IHeader {
   backColor?: string;
 }
 
+const SCROLL_Y_TO_REDUCE_HEADER_OPACITY = 80
+
 const Header: React.FC<IHeader> = ({ hiddenNav, hiddenShadow, backColor }) => {
   const [openHeader, setOpenHeader] = useState(false);
+  const [reduceOpacity, setReduceOpacity] = useState(false)
+
   const socialNetworks = useMemo(
     () => [
       {
@@ -39,11 +43,27 @@ const Header: React.FC<IHeader> = ({ hiddenNav, hiddenShadow, backColor }) => {
     setOpenHeader((old) => !old);
   };
 
+  useEffect(() => {
+    window.addEventListener("scroll", e => {
+      if (window.scrollY >= SCROLL_Y_TO_REDUCE_HEADER_OPACITY) {
+        if (!reduceOpacity)
+          setReduceOpacity(true)
+      } else {
+        setReduceOpacity(false)
+      }
+    })
+
+    return () => {
+      window.removeEventListener("scroll", () => {});
+    }
+  }, [])
+
   return (
     <Container
       style={{
         backgroundColor: backColor || "#fff",
-        boxShadow: hiddenShadow ? "none" : undefined,
+        boxShadow: hiddenShadow || reduceOpacity ? "none" : undefined,
+        opacity: reduceOpacity ? 0.25 : 1
       }}
       openHeader={openHeader}
     >

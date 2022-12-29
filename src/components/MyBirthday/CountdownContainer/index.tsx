@@ -54,7 +54,7 @@ const Countdown: React.FC = () => {
     return () => {
       clearInterval(countdownInterval);
     };
-  }, [countdownInterval]);
+  }, []);
 
   return (
     <Container>

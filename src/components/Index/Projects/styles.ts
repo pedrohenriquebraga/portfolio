@@ -71,13 +71,13 @@ export const ProjectsSliderImagesContainer = styled.div`
 
       &:hover {
         background: #00000088;
-        transition: 500ms;
       }
 
+      transition: 500ms;
     }
 
-    @media (max-width: 550px) {
-      bottom: 20%;
+    @media (max-width: 760px) {
+      top: 42%;
     }
   }
 
@@ -93,9 +93,9 @@ export const ProjectsSliderImagesContainer = styled.div`
       justify-content: center;
       margin: auto;
 
-      @media (max-width: 550px) {
+      /* @media (max-width: 550px) {
         width: 100%;
-      }
+      } */
   
   
       cursor: pointer;
@@ -103,7 +103,7 @@ export const ProjectsSliderImagesContainer = styled.div`
   
       h3 {
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         color: #fff;
         margin-bottom: 1rem;
       }

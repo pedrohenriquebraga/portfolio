@@ -104,11 +104,11 @@ const Projects: React.FC = () => {
                 rel="external noreferrer"
               >
                 <h3>{slides[currentSlide].name}</h3>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={slides[currentSlide].image_url}
                   alt={slides[currentSlide].name}
-                  loading="lazy"
+                  width={1280}
+                  height={720}
                 />
               </a>
               <p id="slider-counter">{currentSlide + 1} / {slides.length}</p>

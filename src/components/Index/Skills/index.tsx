@@ -59,7 +59,7 @@ const Skills: React.FC = () => {
                 rel="external noopener noreferrer"
                 href={docsUrl}
               >
-                <Image width={100} height={100} src={srcImg} alt={altImg} />
+                <Image width={80} height={80} src={srcImg} alt={altImg} />
               </a>
             </div>
           ))}

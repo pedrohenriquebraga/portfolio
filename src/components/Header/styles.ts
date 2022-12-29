@@ -23,6 +23,8 @@ export const Container = styled.header<{ openHeader: boolean }>`
 
   animation: ${ShowHeader} 500ms ease-in-out;
 
+  transition: 300ms;
+  
   nav {
     display: flex;
     align-items: center;
@@ -95,7 +97,6 @@ export const Container = styled.header<{ openHeader: boolean }>`
 
       &:hover {
         color: #1d1ef9;
-        transition: 300ms;
       }
     }
   }
