@@ -1,7 +1,7 @@
 import BlogHeader from "@components/Blog/BlogHeader";
 import Footer from "@components/Footer";
 import Body from "@components/Post/Body";
-import { GetStaticPropsContext } from "next";
+import { GetStaticPathsContext, GetStaticPropsContext } from "next";
 import Head from "next/head";
 import React from "react";
 import getPosts from "src/lib/posts";
@@ -25,11 +25,16 @@ const PostPage: React.FC<{ post: Post }> = ({ post }) => {
   );
 };
 
-export async function getStaticPaths() {
+export async function getStaticPaths(ctx: GetStaticPathsContext) {
   const posts = await getPosts();
+  const locales = ctx.locales;
 
   return {
-    paths: posts.map((post: Post) => `/blog/posts/${post.slug}`),
+    paths: posts.map((post: Post) => {
+      return locales?.map((locale) => {
+        return { params: { slug: `/blog/post/${post.slug}` }, locale };
+      });
+    }).flat(),
     fallback: true,
   };
 }
@@ -41,7 +46,7 @@ export async function getStaticProps(ctx: GetStaticPropsContext) {
   return {
     props: {
       post,
-      messages: require(`../../../src/locales/${ctx.locale}.json`)
+      messages: require(`../../../src/locales/${ctx.locale}.json`),
     },
   };
 }
