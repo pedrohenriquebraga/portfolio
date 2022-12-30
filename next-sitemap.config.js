@@ -5,7 +5,6 @@ module.exports = {
   siteUrl,
   exclude: ["/404", "/500", "/server-sitemap-server"],
   generateRobotsTxt: true,
-  generateIndexSitemap: false,
   robotsTxtOptions: {
     policies: [
       {
