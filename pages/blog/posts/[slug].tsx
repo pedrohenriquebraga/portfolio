@@ -26,9 +26,16 @@ const PostPage: React.FC<{ post: Post }> = ({ post }) => {
 };
 
 export async function getStaticPaths(ctx: GetStaticPathsContext) {
+  const posts = await getPosts();
+  const locales = ctx.locales;
+
   return {
-    paths: [],
-    fallback: true,
+    paths: posts.map((post: Post) => {
+      return locales?.map((locale) => {
+        return { params: { slug: `${post.slug}`, locale } }
+      });
+    }).flat(),
+    fallback: "blocking",
   };
 }
 
