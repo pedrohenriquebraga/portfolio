@@ -1,10 +1,12 @@
 import React from "react";
 import Header from "@components/Header";
 import Body from "@components/Index/Body";
+import { GetStaticPropsContext } from "next";
 
 import { Container } from "@styles/pages";
 import Footer from "@components/Footer";
 import Head from "next/head";
+import { useTranslations } from "next-intl";
 
 const Main: React.FC = () => {
   return (
@@ -36,5 +38,13 @@ const Main: React.FC = () => {
     </>
   );
 };
+
+export function getStaticProps({ locale }: GetStaticPropsContext) {
+  return {
+    props: {
+      messages: require(`../src/locales/${locale}.json`),
+    },
+  };
+}
 
 export default Main;

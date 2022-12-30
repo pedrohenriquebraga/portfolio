@@ -1,0 +1,65 @@
+{
+  "header": {
+    "nav": {
+      "close_menu": "Close",
+      "welcome": "Welcome",
+      "about_me": "About me",
+      "my_skills": "Skills",
+      "my_projects": "Projects",
+      "contact_me": "Contact",
+      "blog": "Blog",
+      "my_birthday": "Birthday",
+      "portfolio": "Portfólio"
+    }
+  },
+  "home": {
+    "presentation": {
+      "title": "Hello, my\nname's Pedro Henrique.\nI'm a fullstack\ndeveloper.",
+      "scroll_down": "scroll down"
+    },
+    "about_me": {
+      "title": "About me",
+      "paragraphs": {
+        "0": "I'm {yearsOld} years old and programmer since 13 years old and located in Brazil. I Have skills in frontend and backend development.",
+        "1": "I'm always learning new things and always trying to improve my skills. I love to read books, watch movies, listen music, play games and obviously program.",
+        "2": "I'm a high school student and available for jobs in anywhere."
+      },
+      "skills_list": [
+        "English intermediary",
+        "Javascript/Typescript (ES6) and Python",
+        "Web development (HTML/CSS, React and NextJS)",
+        "Mobile development (React Native, Firebase and Expo)",
+        "Backend development (NodeJS)",
+        "API development (Express, Typeorm, Socket.io)",
+        "PostgresSQL, MongoDB"
+      ]
+    },
+    "my_skills": {
+      "title": "Skills"
+    },
+    "my_projects": {
+      "title": "Featured Projects",
+      "subtitle": "These are my projects designed and developed by me. The images will take you to the repository on my Github. All projects here are personal. I&apos;ve never done a professional project, but I&apos;m looking for new Job opportunities. For more projects <link> visit my Github</link>."
+    },
+    "contact": {
+      "title": "Contact Me",
+      "subtitle": "Contact me for more infos, jobs opportunities, freelance and others questions.",
+      "dm_ig": "Contact me in Instagram DM"
+    },
+    "call_to_blog": {
+      "title": "Hey, visit my blog!",
+      "subtitle": "Read my tech posts, daily development, details of my projects and more. Every week have new posts!",
+      "access_blog": "Access blog"
+    }
+  },
+  "blog": {
+    "presentation": {
+      "title": "Read my blog!",
+      "subtitle": "All posts are write by me for people of world. Posts are in pt-BR (English not available in the moment)."
+    },
+    "post_list": {
+      "title": "{amount} Posts",
+      "reading_time": "Approximately {readingTime} minutes"
+    }
+  }
+}

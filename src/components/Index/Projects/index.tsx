@@ -2,9 +2,12 @@ import React, { useMemo, useState } from "react";
 import Image from "next/image";
 import { Container, ProjectsSliderImagesContainer } from "./styles";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import { useTranslations } from "next-intl";
 
 const Projects: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const t = useTranslations("home");
+
   const slides = useMemo(
     () => [
       {
@@ -67,19 +70,11 @@ const Projects: React.FC = () => {
   return (
     <Container id="my-projects">
       <div id="my-projects-container">
-        <h2>My projects</h2>
+        <h2>{t("my_projects.title")}</h2>
         <p>
-          These are my projects designed and developed by me. The images
-          will take you to the repository on my Github. All projects here are
-          personal. I&apos;ve never done a professional project, but I&apos;m
-          looking for new Job opportunities. For more projects{" "}
-          <a
-            href="https://github.com/pedrohenriquebraga"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            visit my Github
-          </a>.
+          {t.rich("my_projects.subtitle", {
+            link: (children) => <a href="https://github.com/pedrohenriquebraga" target="_blank" rel="noopener noreferrer">{children}</a>
+          })}
         </p>
         <ProjectsSliderImagesContainer>
           <div id="slider-container">

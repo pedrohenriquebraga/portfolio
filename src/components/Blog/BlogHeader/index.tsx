@@ -2,8 +2,12 @@ import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
 import { Container } from './styles';
+import { useTranslations } from 'next-intl';
 
 const BlogHeader: React.FC = () => {
+
+  const t = useTranslations("header")
+
   return (
     <Container>
       <div id="logo">
@@ -21,7 +25,7 @@ const BlogHeader: React.FC = () => {
       </div>
       <nav id="links-container">
         <Link href="/">
-          <a>Portfolio</a>
+          <a>{t("nav.portfolio")}</a>
         </Link>
       </nav>
     </Container>

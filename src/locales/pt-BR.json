@@ -1,0 +1,65 @@
+{
+  "header": {
+    "nav": {
+      "close_menu": "Fechar",
+      "welcome": "Bem-vindo",
+      "about_me": "Sobre mim",
+      "my_skills": "Habilidades",
+      "my_projects": "Projetos",
+      "contact_me": "Contato",
+      "blog": "Blog",
+      "my_birthday": "Aniversário",
+      "portfolio": "Portfólio"
+    }
+  },
+  "home": {
+    "presentation": {
+      "title": "Olá, meu\nnome é Pedro Henrique.\nEu sou um desenvolvedor\nfullstack.",
+      "scroll_down": "Role para baixo"
+    },
+    "about_me": {
+      "title": "Sobre mim",
+      "paragraphs": {
+        "0": "Eu tenho {yearsOld} anos e programo desde os 13 anos. Moro no Brasil e tenho habilidades em desenvolvimento frontend e backend.",
+        "1": "Estou sempre aprendendo coisas novas e tentando melhorar minhas habilidades. Eu amo ler livros, assistir filmes, ouvir músicas, jogar jogos e obviamente programar.",
+        "2": "Estou no ensino médio e estou disponível para novos empregos em qualquer lugar."
+      },
+      "skills_list": {
+        "0": "Inglês intermediário",
+        "1": "Javascript/Typescript (ES6) e Python",
+        "2": "Desenvolvimento web (HTML/CSS, React e NextJS)",
+        "3": "Desenvolvimento mobile (React Native, Firebase e Expo)",
+        "4": "Desenvolvimento backend (NodeJS)",
+        "5": "Desenvolvimento de APIs (Express, Typeorm, Socket.io)",
+        "6": "Experiência com PostgresSQL e MongoDB"
+      }
+    },
+    "my_skills": {
+      "title": "Habilidades"
+    },
+    "my_projects": {
+      "title": "Projetos em destaque",
+      "subtitle": "Todos os projetos foram desenvolvidos por mim (desde o design até o código). As imagens levarão você a página do projeto no meu Github. Todos eles são pessoais, mas procuro oportunidades para trabalhos profissionais. Para mais projetos <link>visite meu Github</link>."
+    },
+    "contact": {
+      "title": "Entre em contato",
+      "subtitle": "Fale comigo para mais informações, oportunidades de emprego, freelance e outros assuntos.",
+      "dm_ig": "Entre em contato pela DM do Instagram"
+    },
+    "call_to_blog": {
+      "title": "Ei, visite meu blog!",
+      "subtitle": "Leia minhas postagens sobre tecnologia, desenvolvimento diário, detalhes sobre meus projetos. Todas as semanas temos novas postagens!",
+      "access_blog": "Acesse o blog"
+    }
+  },
+  "blog": {
+    "presentation": {
+      "title": "Leia meu blog!",
+      "subtitle": "Todos as postagens foram escritas por mim para todas as pessoas do mundo."
+    },
+    "post_list": {
+      "title": "{amount} Postagens",
+      "reading_time": "Aproximadamente {readingTime} minutos"
+    }
+  }
+}
