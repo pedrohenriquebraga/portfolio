@@ -1,15 +1,18 @@
 import Link from "next/link";
 import React from "react";
-import readTime from "reading-time";
 import { Post } from "types/interfaces";
 import { Container, PostCard } from "./styles";
 import { FiClock, FiUser, FiCalendar } from "react-icons/fi";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const PostList = ({ posts }: { posts: Post[] }) => {
+
+  const t = useTranslations("blog")
+
   return (
     <Container>
-      <h2>Posts</h2>
+      <h2>{t("post_list.title", { amount: posts.length })}</h2>
       <div id="post-list">
         {posts.map((post, index) => {
           return (
@@ -33,8 +36,8 @@ const PostList = ({ posts }: { posts: Post[] }) => {
                   <FiUser style={{ marginTop: 10 }} /> {post.author}
                 </p>
                 <p id="read-time">
-                  <FiClock style={{ marginTop: 10 }} /> Approximately{" "}
-                  {Math.ceil(post.readingTime)} minutes
+                  <FiClock style={{ marginTop: 10 }} />{" "}
+                  {t("post_list.reading_time", { readingTime: Math.ceil(post.readingTime) })}
                 </p>
               </PostCard>
             </Link>

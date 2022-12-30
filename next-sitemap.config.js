@@ -5,11 +5,12 @@ module.exports = {
   siteUrl,
   exclude: ["/404"],
   generateRobotsTxt: true,
+  generateIndexSitemap: false,
   robotsTxtOptions: {
     policies: [
       {
         userAgent: "*",
-        disallow: ["/404"],
+        disallow: ["/404", "/server-sitemap-server"],
       },
       { userAgent: "*", allow: "/" },
     ],

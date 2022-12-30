@@ -7,6 +7,7 @@ import { Post } from "types/interfaces";
 import { Container } from "@styles/pages";
 import Footer from "@components/Footer";
 import { minutesToSeconds } from "date-fns";
+import { GetStaticPropsContext } from "next";
 
 const Posts = ({ posts }: { posts: Post[] }) => {
   return (
@@ -33,14 +34,16 @@ const Posts = ({ posts }: { posts: Post[] }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }: GetStaticPropsContext) {
   const posts = await getPosts();
-  
+
   return {
     props: {
       posts,
+      messages: require(`../../../src/locales/${locale}.json`),
     },
-    revalidate: minutesToSeconds(60)
+    revalidate: minutesToSeconds(60),
+    fallback: true
   };
 }
 

@@ -8,7 +8,8 @@
       "my_projects": "Projects",
       "contact_me": "Contact",
       "blog": "Blog",
-      "my_birthday": "Birthday"
+      "my_birthday": "Birthday",
+      "portfolio": "Portfólio"
     }
   },
   "home": {
@@ -49,6 +50,16 @@
       "title": "Hey, visit my blog!",
       "subtitle": "Read my tech posts, daily development, details of my projects and more. Every week have new posts!",
       "access_blog": "Access blog"
+    }
+  },
+  "blog": {
+    "presentation": {
+      "title": "Read my blog!",
+      "subtitle": "All posts are write by me for people of world. Posts are in pt-BR (English not available in the moment)."
+    },
+    "post_list": {
+      "title": "{amount} Posts",
+      "reading_time": "Approximately {readingTime} minutes"
     }
   }
 }

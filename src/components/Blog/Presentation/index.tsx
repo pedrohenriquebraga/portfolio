@@ -1,14 +1,16 @@
+import { useTranslations } from "next-intl";
 import React from "react";
 import { Container } from "./styles";
 
 const Presentation: React.FC = () => {
+
+  const t = useTranslations("blog")
+
   return (
     <Container>
-      <h1>Read my blog!</h1>
+      <h1>{t("presentation.title")}</h1>
       <p>
-        All posts are write by me for people of world. Posts are in{" "}
-        <abbr title="Brazilian Portuguese">pt-BR</abbr> (English not available
-        in the moment).
+        {t("presentation.subtitle")}
       </p>
     </Container>
   );
