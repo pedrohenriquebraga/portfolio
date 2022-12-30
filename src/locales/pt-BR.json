@@ -12,6 +12,10 @@
       "portfolio": "Portfólio"
     }
   },
+  "footer": {
+    "copy": "Todos os direitos reservados",
+    "dev": "Desenvolvido por"
+  },
   "home": {
     "presentation": {
       "title": "Olá, meu\nnome é Pedro Henrique.\nEu sou um desenvolvedor\nfullstack.",
@@ -60,6 +64,54 @@
     "post_list": {
       "title": "{amount} Postagens",
       "reading_time": "Aproximadamente {readingTime} minutos"
+    },
+    "post": {
+      "reading_time": "Aproximadamente {readingTime} minutos",
+      "back": "Voltar as postagens"
+    }
+  },
+  "my_birthday": {
+    "countdown": {
+      "calc": "Calculando...",
+      "missing_time": "Faltam exatamente",
+      "years_old_text": "para meu aniversário de <bold>{yearsOld} anos</bold>"
+    },
+    "birthday": {
+      "title": "🎉 Hoje é meu aniversário 🎉",
+      "subtitle": "Quer deixar uma mensagem pra mim?",
+      "buttons": {
+        "instagram": "Enviar uma mensagem no Instagram",
+        "new_in_mural": "Enviar mensagem no mural",
+        "show_mural": "Ver mensagens no mural"
+      }
+    }
+  },
+  "new_mural_post": {
+    "presentation": {
+      "title": "Envie sua mensagem pra mim!",
+      "subtitle": "Sua mensagem irá aparecer no Mural de Aniversário"
+    },
+    "form": {
+      "labels": {
+        "name": "Seu nome",
+        "msg": "Sua mensagem"
+      },
+      "button": {
+        "send": "Enviar mensagem",
+        "sending": "Enviando mensagem..."
+      }
+    }
+  },
+  "mural_posts": {
+    "presentation": {
+      "title": "Mural de Aniversário",
+      "subtitle": "Veja as mensagens que foram enviadas no meu aniversário (todas as mensagens serão apagadas no dia 13/04 às 23:50)"
+    },
+    "posts": {
+      "title": "{amount} Mensagens recebidas"
+    },
+    "post": {
+      "by": "por"
     }
   }
 }

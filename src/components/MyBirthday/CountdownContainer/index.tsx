@@ -1,16 +1,34 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Confetti from "react-confetti";
-import { formatDistanceToNow, formatDistanceToNowStrict, isToday, isAfter } from "date-fns";
+import Link from "next/link";
+import { Container } from "./styles";
 import { FiInstagram, FiMessageSquare, FiInbox } from "react-icons/fi";
 
 import { useWindowSize } from "react-use";
-import { Container } from "./styles";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { useRouter } from "next/router";
+
+import ptBR from "date-fns/locale/pt-BR";
+import enUS from "date-fns/locale/en-US";
+import { formatDistanceToNowStrict, isToday, isAfter, Locale } from "date-fns";
 
 const Countdown: React.FC = () => {
+  const t = useTranslations("my_birthday");
+
   const [isBirthday, setIsBirthday] = useState(false);
-  const [countdown, setCountdown] = useState("Calculating...");
+  const [countdown, setCountdown] = useState(t("countdown.calc"));
   const [countdownInterval, setCountdownInterval] = useState<NodeJS.Timer>();
+
+  const { locale, defaultLocale } = useRouter();
+  const dateLocale = useMemo<Locale>(() => {
+    const locales = {
+      "pt-BR": ptBR,
+      "en-US": enUS,
+    };
+
+    // @ts-ignore
+    return locales[locale || defaultLocale];
+  }, [locale, defaultLocale]);
 
   const { width, height } = useWindowSize();
 
@@ -31,6 +49,7 @@ const Countdown: React.FC = () => {
     setCountdown(
       formatDistanceToNowStrict(nextBirthdayDate, {
         unit: "day",
+        locale: dateLocale,
       })
     );
 
@@ -45,6 +64,7 @@ const Countdown: React.FC = () => {
 
       const formatCountdown = formatDistanceToNowStrict(nextBirthdayDate, {
         unit: "day",
+        locale: dateLocale,
       });
       setCountdown(formatCountdown);
     }, 1000);
@@ -54,6 +74,8 @@ const Countdown: React.FC = () => {
     return () => {
       clearInterval(countdownInterval);
     };
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -66,31 +88,37 @@ const Countdown: React.FC = () => {
             width={width - 20}
             height={height}
             colors={["#ffffff44"]}
+            numberOfPieces={350}
           />
           <p className="animate__animated animate__fadeIn animated__delay-1.5s">
-            Exactly missing
+            {t("countdown.missing_time")}
           </p>
           <h1 className="animate__animated animate__pulse">
             {countdown.toUpperCase()}
           </h1>
           <p className="animate__animated animate__fadeIn animated__delay-1.5s">
-            for my{" "}
-            <strong>
-              18<sup>th</sup> birthday
-            </strong>
+            {t.rich("countdown.years_old_text", {
+              yearsOld: 18,
+              bold: (child) => <strong>{child}</strong>,
+              sup: (child) => <sup>{child}</sup>
+            })}
           </p>
         </div>
       ) : (
-        <div className="animate__animated animate__fadeIn" id="birthday-container">
+        <div
+          className="animate__animated animate__fadeIn"
+          id="birthday-container"
+        >
           <Confetti
             hidden={!isBirthday}
             gravity={0.07}
             friction={0.98}
             width={width - 20}
             height={height}
+            numberOfPieces={350}
           />
-          <h1>🎉 Today is my birthday 🎉</h1>
-          <p>How about leaving a message for me?</p>
+          <h1>{t("birthday.title")}</h1>
+          <p>{t("birthday.subtitle")}</p>
           <div id="send-message-buttons">
             <a
               href="https://instagram.com/pedro_henriquebraga"
@@ -98,19 +126,19 @@ const Countdown: React.FC = () => {
               target="_blank"
               className="send-message-button instagram"
             >
-              <FiInstagram size={20} style={{ verticalAlign: "top" }} /> Send
-              message on Instagram
+              <FiInstagram size={20} style={{ verticalAlign: "top" }} />{" "}
+              {t("birthday.buttons.instagram")}
             </a>
             <Link href="/my-birthday/mural/new">
               <a className="send-message-button mural">
                 <FiMessageSquare size={20} style={{ verticalAlign: "top" }} />{" "}
-                Send message on Mural
+                {t("birthday.buttons.new_in_mural")}
               </a>
             </Link>
             <Link href="/my-birthday/mural">
               <a className="send-message-button">
-                <FiInbox size={20} style={{ verticalAlign: "top" }} /> Access
-                the Birthday Mural
+                <FiInbox size={20} style={{ verticalAlign: "top" }} />{" "}
+                {t("birthday.buttons.show_mural")}
               </a>
             </Link>
           </div>

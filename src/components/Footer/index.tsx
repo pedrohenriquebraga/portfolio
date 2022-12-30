@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import React, { useMemo } from "react";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
@@ -25,6 +26,8 @@ const Footer: React.FC = () => {
     []
   );
 
+  const t = useTranslations("footer")
+
   return (
     <Container>
       <p id="social-networks">
@@ -41,9 +44,9 @@ const Footer: React.FC = () => {
           </a>
         ))}
       </p>
-      <p>&copy; {new Date().getFullYear()} all rights reserved</p>
+      <p>&copy; {new Date().getFullYear()} {t("copy")}</p>
       <p>
-        Developed by{" "}
+        {t("dev")}{" "}
         <a
           href="https://github.com/pedrohenriquebraga"
           target="_blank"

@@ -1,6 +1,7 @@
 import Header from "@components/Header";
 import Body from "@components/NewMuralPost/Body";
 import { Container } from "@styles/pages/new-mural-post";
+import { GetStaticPropsContext } from "next";
 import Head from "next/head";
 import React from "react";
 
@@ -29,6 +30,16 @@ const NewMuralPost: React.FC = () => {
       </body>
     </>
   );
+};
+
+
+export const getStaticProps = async ({ locale }: GetStaticPropsContext) => {
+  return {
+    props: {
+      messages: require(`../../../src/locales/${locale}.json`),
+    },
+    revalidate: 10
+  };
 };
 
 export default NewMuralPost;

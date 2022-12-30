@@ -1,15 +1,16 @@
+import { useTranslations } from 'next-intl';
 import React from 'react';
 
 import { Container } from './styles';
 
 const Presentation: React.FC = () => {
+
+  const t = useTranslations("mural_posts")
+
   return (
     <Container>
-      <h1>Birthday Mural</h1>
-      <p>
-        See messages that were sent on my last birthday (all messages are
-        deleted on 04/13 at 23:50)
-      </p>
+      <h1>{t("presentation.title")}</h1>
+      <p>{t("presentation.subtitle")}</p>
     </Container>
   );
 }

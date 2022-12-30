@@ -83,8 +83,9 @@ export const Container = styled.div`
 
         &:hover {
           transform: scale(1.05);
-          transition: 500ms;
         }
+        
+        transition: 500ms;
       }
     }
   }

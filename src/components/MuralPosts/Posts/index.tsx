@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import React, { useEffect, useState } from "react";
 import Masonry from "react-masonry-css";
 import { Container } from "./styles";
@@ -15,10 +16,13 @@ const breakpointColumnsObj = {
 };
 
 const Posts: React.FC<{ posts: PostData[] }> = ({ posts }) => {
+
+  const t = useTranslations("mural_posts")
+
   return (
     <>
       <Container>
-        <h2>{posts.length} Messages received</h2>
+        <h2>{t("posts.title", { amount: posts.length })}</h2>
         <Masonry
           breakpointCols={breakpointColumnsObj}
           className="posts-container"
@@ -35,7 +39,7 @@ const Posts: React.FC<{ posts: PostData[] }> = ({ posts }) => {
                 <span>{'"'}</span>
               </p>
               <p id="author">
-                <span>by</span> {post.name}
+                <span>{t("post.by")}</span> {post.name}
               </p>
             </div>
           ))}

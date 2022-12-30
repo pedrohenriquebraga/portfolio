@@ -10,6 +10,7 @@ import { PostData } from "@components/MuralPosts/Posts";
 import { Container } from "@styles/pages/mural-posts";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
+import { GetStaticPropsContext } from 'next';
 
 const MuralPosts: React.FC<{ posts: PostData[] }> = ({ posts }) => {
   const { query } = useRouter();
@@ -73,15 +74,16 @@ const MuralPosts: React.FC<{ posts: PostData[] }> = ({ posts }) => {
   );
 };
 
-export const getStaticProps = async () => {
+export const getStaticProps = async ({ locale }: GetStaticPropsContext) => {
   await dbConnect()
   const posts = await BirthdayPost.find({}).sort({ _id: -1 });
-
+  
   return {
     props: {
       posts: JSON.parse(JSON.stringify(posts)),
+      messages: require(`../../../src/locales/${locale}.json`),
     },
-    revalidate: 60
+    revalidate: 10
   };
 };
 

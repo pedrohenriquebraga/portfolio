@@ -12,6 +12,10 @@
       "portfolio": "Portfólio"
     }
   },
+  "footer": {
+    "copy": "All rights reserved",
+    "dev": "Developed by"
+  },
   "home": {
     "presentation": {
       "title": "Hello, my\nname's Pedro Henrique.\nI'm a fullstack\ndeveloper.",
@@ -60,6 +64,44 @@
     "post_list": {
       "title": "{amount} Posts",
       "reading_time": "Approximately {readingTime} minutes"
+    },
+    "post": {
+      "reading_time": "Approximately {readingTime} minutes",
+      "back": "Back to posts"
+    }
+  },
+  "my_birthday": {
+    "countdown": {
+      "calc": "Calculating...",
+      "missing_time": "Exactly missing",
+      "years_old_text": "for my <bold>{yearsOld}<sup>th</sup> birthday</bold>"
+    },
+    "birthday": {
+      "title": "🎉 Today is my birthday 🎉",
+      "subtitle": "How about leaving a message for me?",
+      "buttons": {
+        "instagram": "Send a message in Instagram",
+        "new_in_mural": "Send a message in Mural",
+        "show_mural": "Show Mural messages"
+      }
+    }
+  },
+  "new_mural_post": {
+    "presentation": {
+      "title": "Send your message for me!!",
+      "subtitle": "Your message will show on Birthday Mural"
+    }
+  },
+  "mural_posts": {
+    "presentation": {
+      "title": "Birthday Mural",
+      "subtitle": "See messages that were sent on my birthday (all messages are deleted on 04/13 at 11:50PM)"
+    },
+    "posts": {
+      "title": "{amount} Messages received"
+    },
+    "post": {
+      "by": "by"
     }
   }
 }

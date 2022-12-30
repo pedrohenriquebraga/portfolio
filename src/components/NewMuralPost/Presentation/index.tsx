@@ -1,12 +1,16 @@
+import { useTranslations } from 'next-intl';
 import React from 'react';
 
 import { Container } from './styles';
 
 const Presentation: React.FC = () => {
+
+  const t = useTranslations("new_mural_post")
+
   return (
     <Container>
-      <h1>Send your message for me!!</h1>
-      <p>Your message will show on Birthday Mural</p>
+      <h1>{t("presentation.title")}</h1>
+      <p>{t("presentation.subtitle")}</p>
     </Container>
   );
 }

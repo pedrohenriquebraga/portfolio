@@ -8,14 +8,18 @@ import { Container } from "./styles";
 
 import { FiClock, FiUser, FiCalendar, FiArrowLeft } from "react-icons/fi";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const PostContent = ({ post }: { post: Post }) => {
+
+  const t = useTranslations("blog")
+
   return (
     <Container>
       <div id="post">
         <div className="go-back">
           <Link href="/blog/posts">
-            <a><FiArrowLeft style={{ paddingTop: 2 }} /> Back to posts</a>
+            <a><FiArrowLeft style={{ paddingTop: 2 }} /> {t("post.back")}</a>
           </Link>
         </div>
         <h1 id="main-title">{post.title}</h1>
@@ -28,7 +32,7 @@ const PostContent = ({ post }: { post: Post }) => {
             <FiUser /> {post.author}
           </p>
           <p id="read-time">
-            <FiClock /> Approximately {Math.ceil(post.readingTime)} minutes
+            <FiClock /> {t("post.reading_time", { readingTime: Math.ceil(post.readingTime) })}
           </p>
         </div>
         <Image
@@ -53,7 +57,7 @@ const PostContent = ({ post }: { post: Post }) => {
         </div>
         <div className="go-back">
           <Link href="/blog/posts">
-            <a><FiArrowLeft style={{ paddingTop: 2 }} /> Back to posts</a>
+            <a><FiArrowLeft style={{ paddingTop: 2 }} /> {t("post.back")}</a>
           </Link>
         </div>
       </div>
