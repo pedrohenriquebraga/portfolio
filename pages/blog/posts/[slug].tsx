@@ -29,7 +29,7 @@ export async function getStaticPaths() {
 
   return {
     paths: posts.map((post: Post) => `/blog/posts/${post.slug}`),
-    fallback: false,
+    fallback: true,
   };
 }
 

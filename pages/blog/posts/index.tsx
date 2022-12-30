@@ -43,7 +43,6 @@ export async function getStaticProps({ locale }: GetStaticPropsContext) {
       messages: require(`../../../src/locales/${locale}.json`),
     },
     revalidate: minutesToSeconds(60),
-    fallback: true
   };
 }
 
