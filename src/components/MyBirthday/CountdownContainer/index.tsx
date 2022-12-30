@@ -35,7 +35,7 @@ const Countdown: React.FC = () => {
   useEffect(() => {
     const date = new Date();
     const currentYear = date.getFullYear();
-    const currentYearBirthday = new Date(`04/14/${currentYear}`);
+    const currentYearBirthday = new Date(`04/14/${currentYear}, 00:00`);
 
     if (isToday(currentYearBirthday)) {
       setIsBirthday(true);
@@ -43,7 +43,7 @@ const Countdown: React.FC = () => {
     }
 
     const nextBirthdayDate = isAfter(date, currentYearBirthday)
-      ? new Date(`04/14/${currentYear + 1}`)
+      ? new Date(`04/14/${currentYear + 1}, 00:00`)
       : currentYearBirthday;
 
     setCountdown(
@@ -88,7 +88,7 @@ const Countdown: React.FC = () => {
             width={width - 20}
             height={height}
             colors={["#ffffff44"]}
-            numberOfPieces={350}
+            numberOfPieces={230}
           />
           <p className="animate__animated animate__fadeIn animated__delay-1.5s">
             {t("countdown.missing_time")}
@@ -115,7 +115,7 @@ const Countdown: React.FC = () => {
             friction={0.98}
             width={width - 20}
             height={height}
-            numberOfPieces={350}
+            numberOfPieces={230}
           />
           <h1>{t("birthday.title")}</h1>
           <p>{t("birthday.subtitle")}</p>
