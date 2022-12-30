@@ -32,7 +32,7 @@ export async function getStaticPaths(ctx: GetStaticPathsContext) {
   return {
     paths: posts.map((post: Post) => {
       return locales?.map((locale) => {
-        return { params: { slug: `/blog/post/${post.slug}` }, locale };
+        return { params: { slug: `/blog/posts/${post.slug}` }, locale };
       });
     }).flat(),
     fallback: true,
