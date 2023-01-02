@@ -17,6 +17,11 @@
     "dev": "Desenvolvido por"
   },
   "home": {
+    "meta_infos": {
+      "name": "Portfólio do Pedro Henrique",
+      "title": "Pedro Henrique | Desenvolvedor fullstack | Frontend | Backend",
+      "desc": "Este é o portfólio do Pedro Henrique Santos Braga. Eu sou desenvolvedor fullstack. Aqui você pode encontrar meus projetos, currículo e informações para contato."
+    },
     "presentation": {
       "title": "Olá, meu\nnome é Pedro Henrique.\nEu sou um desenvolvedor\nfullstack.",
       "scroll_down": "Role para baixo"
@@ -57,9 +62,14 @@
     }
   },
   "blog": {
+    "meta_infos": {
+      "name": "Blog do Pedro Henrique",
+      "title": "Postagens do blog | Pedro Henrique",
+      "desc": "Leia as postagens do meu blog. Aqui você encontra o melhor conteúdo sobre programação, tecnologia e as novidades do mundo da internet."
+    },
     "presentation": {
       "title": "Leia meu blog!",
-      "subtitle": "Todos as postagens foram escritas por mim para todas as pessoas do mundo."
+      "subtitle": "Todas as postagens foram escritas por mim para todas as pessoas do mundo."
     },
     "post_list": {
       "title": "{amount} Postagens",
@@ -71,6 +81,11 @@
     }
   },
   "my_birthday": {
+    "meta_infos": {
+      "name": "Contagem regressiva para meu aniversário",
+      "title": "Contagem regressiva para meu aniversário 🎉 | Pedro Henrique",
+      "desc": "Veja a contagem regressiva para meu aniversário!! Ela é atualizada em tempo real e também dá acesso ao Mural de Aniversário no dia 14/04."
+    },
     "countdown": {
       "calc": "Calculando...",
       "missing_time": "Faltam exatamente",
@@ -87,6 +102,11 @@
     }
   },
   "new_mural_post": {
+    "meta_infos": {
+      "name": "Mural de aniversário do Pedro Henrique",
+      "title": "Nova mensagem para o Mural de Aniversário | Pedro Henrique",
+      "desc": "Envie uma nova mensagem para meu aniversário. Essa mensagem irá ficar no Mural de Aniversário por 1 ano."
+    },
     "presentation": {
       "title": "Envie sua mensagem pra mim!",
       "subtitle": "Sua mensagem irá aparecer no Mural de Aniversário"
@@ -103,6 +123,11 @@
     }
   },
   "mural_posts": {
+    "meta_infos": {
+      "name": "Mural de aniversário do Pedro Henrique",
+      "title": "Mural de aniversário | Pedro Henrique",
+      "desc": "Veja todas as mensagens que foram enviadas no meu último aniversário. No dia do aniversário, novas podem ser enviadas."
+    },
     "presentation": {
       "title": "Mural de Aniversário",
       "subtitle": "Veja as mensagens que foram enviadas no meu aniversário (todas as mensagens serão apagadas no dia 13/04 às 23:50)"

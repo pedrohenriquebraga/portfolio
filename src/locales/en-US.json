@@ -17,6 +17,11 @@
     "dev": "Developed by"
   },
   "home": {
+    "meta_infos": {
+      "name": "Pedro Henrique's portfolio",
+      "title": "Pedro Henrique | Fullstack developer | Frontend | Backend",
+      "desc": "This is a Pedro Henrique Santos Braga's portfolio. I'm a Fullstack Developer. Here you can find my projects, resume and contact information. Enjoy! :)"
+    },
     "presentation": {
       "title": "Hello, my\nname's Pedro Henrique.\nI'm a fullstack\ndeveloper.",
       "scroll_down": "scroll down"
@@ -57,6 +62,11 @@
     }
   },
   "blog": {
+    "meta_infos": {
+      "name": "Pedro Henrique's blog",
+      "title": "Blog posts | Pedro Henrique",
+      "desc": "Read the posts of my blogs. Here you find the better content about programming, tech and news of WWW."
+    },
     "presentation": {
       "title": "Read my blog!",
       "subtitle": "All posts are write by me for people of world. Posts are in pt-BR (English not available in the moment)."
@@ -71,6 +81,11 @@
     }
   },
   "my_birthday": {
+    "meta_infos": {
+      "name": "Pedro Henrique's birthday",
+      "title": "Countdown to my birthday 🎉 | Pedro Henrique",
+      "desc": "See my birthday countdown! She is updated in realtime and also give access to my Birthday Mural."
+    },
     "countdown": {
       "calc": "Calculating...",
       "missing_time": "Exactly missing",
@@ -87,12 +102,22 @@
     }
   },
   "new_mural_post": {
+    "meta_infos": {
+      "name": "Pedro Henrique's Birthday Mural",
+      "title": "New message to birthday mural | Pedro Henrique",
+      "desc": "Send a new message for my birthday mural. This message will stay in mural by 1 year."
+    },
     "presentation": {
       "title": "Send your message for me!!",
       "subtitle": "Your message will show on Birthday Mural"
     }
   },
   "mural_posts": {
+    "meta_infos": {
+      "name": "Pedro Henrique's Birthday Mural",
+      "title": "Birthday mural | Pedro Henrique",
+      "desc": "Look all messages sended on my last birthday. In birthday, new messages can be send."
+    },
     "presentation": {
       "title": "Birthday Mural",
       "subtitle": "See messages that were sent on my birthday (all messages are deleted on 04/13 at 11:50PM)"

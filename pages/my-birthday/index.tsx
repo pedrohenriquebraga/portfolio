@@ -5,23 +5,20 @@ import Header from "@components/Header";
 import Body from "@components/MyBirthday/Body";
 import { Container } from "@styles/pages/my-birthday";
 import { GetStaticPropsContext } from "next";
+import { useTranslations } from "next-intl";
 
 const MyBirthday: React.FC = () => {
+  const t = useTranslations("my_birthday");
+
   return (
     <>
       <Head>
-        <title>
-          Countdown to my birthday 🎉 | Pedro Henrique | Fullstack developer |
-          Frontend | Backend
-        </title>
+        <title>{t("meta_infos.title")}</title>
         <meta property="og:image" content="/banner.webp" />
-        <meta property="og:site_name" content="Pedro Henrique's Portfolio" />
-        <meta
-          property="og:title"
-          content="Countdown to my birthday 🎉 | Pedro Henrique | Fullstack developer | Frontend | Backend"
-        />
-        <meta property="og:description" content="My birthday countdown and access for my Birthday Mural" />
-        <meta name="description" content="My birthday countdown and access for my Birthday Mural" />
+        <meta property="og:site_name" content={t("meta_infos.name")} />
+        <meta property="og:title" content={t("meta_infos.title")} />
+        <meta property="og:description" content={t("meta_infos.desc")} />
+        <meta name="description" content={t("meta_infos.desc")} />
       </Head>
       <body>
         <Container>

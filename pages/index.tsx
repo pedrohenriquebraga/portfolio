@@ -9,24 +9,17 @@ import Head from "next/head";
 import { useTranslations } from "next-intl";
 
 const Main: React.FC = () => {
+  const t = useTranslations("home");
+
   return (
     <>
       <Head>
-        <title>Pedro Henrique | Fullstack developer | Frontend | Backend</title>
+        <title>{t("meta_infos.title")}</title>
         <meta property="og:image" content="/banner.webp" />
-        <meta property="og:site_name" content="Pedro Henrique's Portfolio" />
-        <meta
-          property="og:title"
-          content="Pedro Henrique | Fullstack developer | Frontend | Backend"
-        />
-        <meta
-          property="og:description"
-          content="This is a Pedro Henrique Santos Braga's portfolio. I'm a Fullstack Developer. Here you can find my projects, resume and contact information. Enjoy! :)"
-        />
-        <meta
-          name="description"
-          content="This is a Pedro Henrique Santos Braga's portfolio. I'm a Fullstack Developer. Here you can find my projects, resume and contact information. Enjoy! :)"
-        />
+        <meta property="og:site_name" content={t("meta_infos.name")} />
+        <meta property="og:title" content={t("meta_infos.title")} />
+        <meta property="og:description" content={t("meta_infos.desc")} />
+        <meta name="description" content={t("meta_infos.desc")} />
       </Head>
       <body>
         <Container>

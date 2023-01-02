@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 
   html, body, #root {
     height: 100%;
+    scroll-behavior: smooth;
   }
 
   html {

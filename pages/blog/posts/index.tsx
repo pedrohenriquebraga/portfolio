@@ -8,22 +8,19 @@ import { Container } from "@styles/pages";
 import Footer from "@components/Footer";
 import { minutesToSeconds } from "date-fns";
 import { GetStaticPropsContext } from "next";
+import { useTranslations } from "next-intl";
 
 const Posts = ({ posts }: { posts: Post[] }) => {
+  const t = useTranslations("blog");
+
   return (
     <>
       <Head>
-        <title>Blog Posts | Pedro Henrique</title>
-        <meta
-          name="description"
-          content="Look all posts of blog. Develop and tech content"
-        />
-        <meta property="og:site_name" content="Pedro Henrique's Blog" />
-        <meta property="og:title" content="Blog Posts | Pedro Henrique" />
-        <meta
-          property="og:description"
-          content="Look all posts of blog. Develop and tech content"
-        />
+        <title>{t("meta_infos.title")}</title>
+        <meta name="description" content={t("meta_infos.desc")} />
+        <meta property="og:site_name" content={t("meta_infos.name")} />
+        <meta property="og:title" content={t("meta_infos.title")} />
+        <meta property="og:description" content={t("meta_infos.desc")} />
       </Head>
       <Container>
         <BlogHeader />
