@@ -28,7 +28,8 @@ export const Container = styled.div`
     padding: 2rem;
 
     h1 {
-      font-size: 4rem;
+      font-size: 3rem;
+      font-family: 'JetBrains Mono', monospace;;
       animation: ${CountdownAnimation} 3s alternate infinite;
     }
 

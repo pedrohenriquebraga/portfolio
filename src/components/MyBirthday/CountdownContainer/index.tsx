@@ -10,7 +10,21 @@ import { useRouter } from "next/router";
 
 import ptBR from "date-fns/locale/pt-BR";
 import enUS from "date-fns/locale/en-US";
-import { formatDistanceToNowStrict, isToday, isAfter, Locale } from "date-fns";
+import {
+  formatDuration,
+  isToday,
+  isAfter,
+  Locale,
+  intervalToDuration,
+} from "date-fns";
+
+const units = [
+  "months",
+  "days",
+  "hours",
+  "minutes",
+  "seconds",
+];
 
 const Countdown: React.FC = () => {
   const t = useTranslations("my_birthday");
@@ -46,12 +60,22 @@ const Countdown: React.FC = () => {
       ? new Date(`04/14/${currentYear + 1}, 00:00`)
       : currentYearBirthday;
 
-    setCountdown(
-      formatDistanceToNowStrict(nextBirthdayDate, {
-        unit: "day",
-        locale: dateLocale,
-      })
-    );
+    const duration = intervalToDuration({
+      start: nextBirthdayDate,
+      end: date,
+    });
+
+    let nonzero = Object.entries(duration)
+      .filter(([_, value]) => value || 0 > 0)
+      .map(([unit, _]) => unit);
+    const formatCountdown = formatDuration(duration, {
+      format: units.filter((i) => new Set(nonzero).has(i)).slice(0, 3),
+      delimiter: ", ",
+      locale: dateLocale,
+      zero: true,
+    });
+
+    setCountdown(formatCountdown);
 
     const interval = setInterval(() => {
       const date = new Date();
@@ -62,9 +86,19 @@ const Countdown: React.FC = () => {
         return;
       }
 
-      const formatCountdown = formatDistanceToNowStrict(nextBirthdayDate, {
-        unit: "day",
+      const duration = intervalToDuration({
+        start: nextBirthdayDate,
+        end: date,
+      });
+
+      nonzero = Object.entries(duration)
+        .filter(([_, value]) => value || 0 > 0)
+        .map(([unit, _]) => unit);
+      const formatCountdown = formatDuration(duration, {
+        format: units.filter((i) => new Set(nonzero).has(i)).slice(0, 3),
+        delimiter: ", ",
         locale: dateLocale,
+        zero: true,
       });
       setCountdown(formatCountdown);
     }, 1000);
@@ -100,7 +134,7 @@ const Countdown: React.FC = () => {
             {t.rich("countdown.years_old_text", {
               yearsOld: 18,
               bold: (child) => <strong>{child}</strong>,
-              sup: (child) => <sup>{child}</sup>
+              sup: (child) => <sup>{child}</sup>,
             })}
           </p>
         </div>
