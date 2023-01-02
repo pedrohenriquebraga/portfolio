@@ -20,7 +20,7 @@
     "meta_infos": {
       "name": "Pedro Henrique's portfolio",
       "title": "Pedro Henrique | Fullstack developer | Frontend | Backend",
-      "desc": "This is a Pedro Henrique Santos Braga's portfolio. I'm a Fullstack Developer. Here you can find my projects, resume and contact information. Enjoy! :)"
+      "desc": "I'm a Fullstack, backend and frontend Developer. Here you can find my projects, resume and contact information. Enjoy! :)"
     },
     "presentation": {
       "title": "Hello, my\nname's Pedro Henrique.\nI'm a fullstack\ndeveloper.",
@@ -29,7 +29,7 @@
     "about_me": {
       "title": "About me",
       "paragraphs": {
-        "0": "I'm {yearsOld} years old and programmer since 13 years old and located in Brazil. I Have skills in frontend and backend development.",
+        "0": "I'm {yearsOld} years old and programmer since 13 years old and located in Brazil (more specifically in Goiânia). I Have skills in frontend and backend development.",
         "1": "I'm always learning new things and always trying to improve my skills. I love to read books, watch movies, listen music, play games and obviously program.",
         "2": "I'm a high school student and available for jobs in anywhere."
       },

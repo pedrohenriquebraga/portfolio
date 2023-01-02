@@ -20,7 +20,7 @@
     "meta_infos": {
       "name": "Portfólio do Pedro Henrique",
       "title": "Pedro Henrique | Desenvolvedor fullstack | Frontend | Backend",
-      "desc": "Este é o portfólio do Pedro Henrique Santos Braga. Eu sou desenvolvedor fullstack. Aqui você pode encontrar meus projetos, currículo e informações para contato."
+      "desc": "Eu sou desenvolvedor fullstack, backend e frontend. Aqui você pode encontrar meus projetos, currículo e informações para contato."
     },
     "presentation": {
       "title": "Olá, meu\nnome é Pedro Henrique.\nEu sou um desenvolvedor\nfullstack.",
@@ -29,7 +29,7 @@
     "about_me": {
       "title": "Sobre mim",
       "paragraphs": {
-        "0": "Eu tenho {yearsOld} anos e programo desde os 13 anos. Moro no Brasil e tenho habilidades em desenvolvimento frontend e backend.",
+        "0": "Eu tenho {yearsOld} anos e programo desde os 13 anos. Moro no Brasil (mais especificamente em Goiânia) e tenho habilidades em desenvolvimento frontend e backend.",
         "1": "Estou sempre aprendendo coisas novas e tentando melhorar minhas habilidades. Eu amo ler livros, assistir filmes, ouvir músicas, jogar jogos e obviamente programar.",
         "2": "Estou no ensino médio e estou disponível para novos empregos em qualquer lugar."
       },
