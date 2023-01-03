@@ -76,7 +76,9 @@ export const Container = styled.main`
       margin: 2rem;
       flex-wrap: wrap;
 
-      #date, #author, #read-time {
+      #date,
+      #author,
+      #read-time {
         font-size: 1.4rem;
         color: #727272;
         margin: 0 0.5rem;
@@ -103,11 +105,12 @@ export const Container = styled.main`
         &:hover {
           color: #6973d8;
           text-decoration: underline;
-          transition: 500ms;
         }
+        transition: 500ms;
       }
 
-      ul, ol {
+      ul,
+      ol {
         margin: 1.2rem 0;
         li {
           font-size: 1.8rem;
@@ -121,6 +124,31 @@ export const Container = styled.main`
         border-radius: 8px;
         margin: 1.5rem 0;
         object-fit: cover;
+      }
+
+      pre {
+        margin: 1.5rem 0;
+        background-color: #353535;
+        color: #fff;
+        padding: 1.5rem;
+        border-radius: 8px;
+
+        code {
+          font-family: "JetBrains Mono", monospace;
+          font-size: 1.4rem;
+        }
+      }
+
+      blockquote {
+        padding: 1.5rem;
+        margin: 1.5rem 0 1.5rem 1.5rem;
+        border-left: 3px solid #656565;
+
+        p {
+          color: #333;
+          font-style: italic;
+          font-size: 1.7rem;
+        }
       }
     }
   }
