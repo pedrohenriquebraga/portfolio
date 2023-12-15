@@ -7,13 +7,14 @@ import Projects from '../Projects';
 import Skills from '../Skills';
 
 import { Container } from './styles';
+import { TSkills } from 'pages';
 
-const Body: React.FC = () => {
+const Body: React.FC<{ skills: TSkills[] }> = ({ skills }) => {
   return (
     <Container>
       <Presentation />
       <About />
-      <Skills />
+      <Skills skills={skills} />
       <Projects />
       <Contact />
       <CallToBlog />
