@@ -29,9 +29,9 @@
     "about_me": {
       "title": "Sobre mim",
       "paragraphs": {
-        "0": "Eu tenho {yearsOld} anos e programo desde os 13 anos. Moro no Brasil (mais especificamente em Goiânia) e tenho habilidades em desenvolvimento frontend e backend.",
-        "1": "Estou sempre aprendendo coisas novas e tentando melhorar minhas habilidades. Eu amo ler livros, assistir filmes, ouvir músicas, jogar jogos e obviamente programar.",
-        "2": "Concluí o ensino médio e estou disponível para novos empregos em qualquer lugar."
+        "0": "Sou programador Fullstack júnior com experiência em Typescript, React, React Native, Expo, NextJs, Postgres, Redis, Express e outras tecnologias. Busco constantemente melhorar minhas habilidades para enfrentar desafios em projetos inovadores.",
+        "1": "Estou em busca de oportunidades que me permitam aplicar essas habilidades de forma prática, contribuindo efetivamente para equipes colaborativas. Estou entusiasmado em participar do desenvolvimento de projetos estimulantes e contribuir para soluções eficazes.",
+        "2": "Além do meu interesse profissional, gosto de música, jogos e leitura, o que contribui para minha abordagem criativa na resolução de problemas."
       },
       "skills_list": {
         "0": "Inglês intermediário",
@@ -40,7 +40,7 @@
         "3": "Desenvolvimento mobile (React Native, Firebase e Expo)",
         "4": "Desenvolvimento backend (NodeJS)",
         "5": "Desenvolvimento de APIs (Express, Typeorm, Socket.io)",
-        "6": "Experiência com PostgresSQL e MongoDB"
+        "6": "Experiência com PostgresSQL, MongoDB e Redis"
       }
     },
     "my_skills": {
@@ -48,7 +48,7 @@
     },
     "my_projects": {
       "title": "Projetos em destaque",
-      "subtitle": "Todos os projetos foram desenvolvidos por mim (desde o design até o código). As imagens levarão você a página do projeto no meu Github. Todos eles são pessoais, mas procuro oportunidades para trabalhos profissionais. Para mais projetos <link>visite meu Github</link>."
+      "subtitle": "Sou responsável pelo desenvolvimento integral de todos os projetos, abrangendo desde o design até a implementação do código. As imagens direcionam para as páginas correspondentes dos projetos em meu repositório no Github. Embora esses projetos tenham natureza pessoal, estou ativamente em busca de oportunidades para envolvimento em trabalhos profissionais. Para acessar uma seleção mais abrangente de meus projetos, convido a visitar meu perfil completo no <link>Github</link>."
     },
     "contact": {
       "title": "Entre em contato",
