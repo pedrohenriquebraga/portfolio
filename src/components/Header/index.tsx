@@ -17,7 +17,6 @@ const SCROLL_Y_TO_REDUCE_HEADER_OPACITY = 80
 
 const Header: React.FC<IHeader> = ({ hiddenNav, hiddenShadow, backColor }) => {
   const [openHeader, setOpenHeader] = useState(false);
-  const [reduceOpacity, setReduceOpacity] = useState(false);
 
   const t = useTranslations("header")
 
@@ -46,27 +45,10 @@ const Header: React.FC<IHeader> = ({ hiddenNav, hiddenShadow, backColor }) => {
     setOpenHeader((old) => !old);
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", e => {
-      if (window.scrollY >= SCROLL_Y_TO_REDUCE_HEADER_OPACITY) {
-        if (!reduceOpacity)
-          setReduceOpacity(true)
-      } else {
-        setReduceOpacity(false)
-      }
-    })
-
-    return () => {
-      window.removeEventListener("scroll", () => {});
-    }
-  }, [])
-
   return (
     <Container
       style={{
         backgroundColor: backColor || "#fff",
-        boxShadow: hiddenShadow || reduceOpacity ? "none" : undefined,
-        opacity: reduceOpacity && !openHeader ? 0.35 : 1
       }}
       openHeader={openHeader}
     >
