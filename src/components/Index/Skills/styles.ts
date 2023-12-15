@@ -10,26 +10,25 @@ export const Container = styled.section`
   }
 
   #skills-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
+    display: grid;
+    grid-template-columns: repeat(4, minmax(30px, 1fr));
+    gap: 15px;
+    
     .skill-container {
+      margin: 0 auto;
       a {
-        width: 12rem;
-        height: 12rem;
-        margin: 2rem;
         img {
-          object-fit: cover;
           filter: saturate(0%);
-
+          object-fit: cover;
           &:hover {
             filter: saturate(100%);
-            transform: scale(1.05);
-            transition: 300ms;
+            transition: 250ms;
           }
         }
+      }
+      &:hover {
+        transform: scale(1.2);
+        transition: 250ms;
       }
     }
   }
