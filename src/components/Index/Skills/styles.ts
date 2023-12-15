@@ -28,8 +28,8 @@ export const Container = styled.section`
       }
       &:hover {
         transform: scale(1.2);
-        transition: 250ms;
       }
+      transition: 250ms;
     }
   }
 
