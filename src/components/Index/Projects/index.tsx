@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
         github_url: "https://github.com/flow-apps/saturn-chat-mobile",
         description:
           "Este projeto em desenvolvimento é minha iniciativa mais significativa até o momento. Um aplicativo de mensagens para dispositivos móveis, simplificando funcionalidades do WhatsApp e Discord de maneira mais intuitiva. Destaca-se por um sistema avançado de convites, atribuição de cargos, envio de arquivos e mensagens de voz.",
-        techs: ["Typescript", "React Native", "Expo", "Styled Components"],
+        techs: ["Typescript", "React Native", "Expo", "Firebase", "Styled Components"],
       },
       {
         name: "Saturn Chat (API)",
