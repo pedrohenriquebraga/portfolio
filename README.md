@@ -1,6 +1,6 @@
 # Portfolio
 
-![Imagem do portfólio](https://github.com/pedrohenriquebraga/portfolio/blob/main/public/portfolio-project.jpg)
+![Imagem do portfólio](https://github.com/pedrohenriquebraga/portfolio/blob/main/public/projects/portfolio-project.jpg)
 
 Este é meu portifólio totalmente desenvolvido com **NextJs** e **TypeScript** com um blog integrado e totalmente funcional.
 
