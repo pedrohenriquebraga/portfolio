@@ -29,9 +29,9 @@
     "about_me": {
       "title": "About me",
       "paragraphs": {
-        "0": "I'm {yearsOld} years old and programmer since 13 years old and located in Brazil (more specifically in Goiânia). I Have skills in frontend and backend development.",
-        "1": "I'm always learning new things and always trying to improve my skills. I love to read books, watch movies, listen music, play games and obviously program.",
-        "2": "I'm available for jobs in anywhere."
+        "0": "I'm a junior Fullstack programmer with experience in Typescript, React, React Native, Expo, NextJs, Postgres, Redis, Express and other technologies. I constantly seek to improve my skills to face challenges in innovative projects.",
+        "1": "I am looking for opportunities that allow me to apply these skills in a practical way, contributing effectively to collaborative teams. I am excited to participate in the development of exciting projects and contribute to effective solutions.",
+        "2": "In addition to my professional interest, I enjoy music, games and reading, which contribute to my creative approach to problem solving."
       },
       "skills_list": [
         "English intermediary",
@@ -40,7 +40,7 @@
         "Mobile development (React Native, Firebase and Expo)",
         "Backend development (NodeJS)",
         "API development (Express, Typeorm, Socket.io)",
-        "PostgresSQL, MongoDB"
+        "PostgresSQL, MongoDB and Redis"
       ]
     },
     "my_skills": {
@@ -48,11 +48,34 @@
     },
     "my_projects": {
       "title": "Featured Projects",
-      "subtitle": "These are my projects designed and developed by me. The images will take you to the repository on my Github. All projects here are personal. I&apos;ve never done a professional project, but I&apos;m looking for new Job opportunities. For more projects <link> visit my Github</link>."
+      "subtitle": "I am responsible for the integral development of all projects, from design to code implementation. Although these projects are personal, I am actively searching opportunities to be involved in professional work. To access my projects, I invite you to visit my full profile on <link>Github</link>.",
+      "projects": {
+        "github_button": "View on Github",
+        "portfolio": {
+          "name": "Portfolio",
+          "description": "I present my new portfolio, marked by modernity and innovation. With the addition of a personal blog and a countdown to my birthday, accompanied by an exclusive congratulatory wall, this project stands out as a significant milestone in my professional journey."
+        },
+        "saturn_chat": {
+          "name": "Saturn Chat",
+          "description": "This ongoing project is my most significant initiative to date. A messaging app for mobile devices, simplifying WhatsApp and Discord features in a more intuitive way. It stands out for its advanced system of invitations, roles system, sending files and voice messages."
+        },
+        "saturn_chat_api": {
+          "name": "Saturn Chat API",
+          "description": "This API is the operational basis of Saturn Chat. It uses Express, the PostgresSQL database (accessed via TypeORM) and stands out for its advanced websockets system. This system facilitates real-time transmission of events between the application and the API, optimized with Redis for caching."
+        },
+        "green_force": {
+          "name": "Green Force",
+          "description": "A website created with the purpose of promoting afforestation as a measure to mitigate global warming, this represents one of the first projects I developed. It constitutes a significant showcase of my transition to the position of Fullstack developer."
+        },
+        "soundify": {
+          "name": "Soundify",
+          "description": "A mobile music app designed to enhance playback of locally stored tracks. Offering features such as background playback, a dynamic player with automatic color selection for the layout, and an automatic song listing functionality on the device."
+        }
+      }
     },
     "contact": {
       "title": "Contact Me",
-      "subtitle": "Contact me for more infos, jobs opportunities, freelance and others questions.",
+      "subtitle": "I am available to discuss additional information, job opportunities and freelance projects. Please contact me for more detailed conversation.",
       "dm_ig": "Contact me in Instagram DM"
     },
     "call_to_blog": {
