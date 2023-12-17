@@ -40,6 +40,21 @@ const Projects: React.FC = () => {
         ],
       },
       {
+        name: "Green Force",
+        image_url: "/projects/green-force-project.jpg",
+        github_url: "https://github.com/pedrohenriquebraga/green-force",
+        description:
+          "Um website elaborado com o propósito de promover a arborização como medida mitigadora do aquecimento global, este representa um dos primeiros projetos por mim desenvolvidos. Constitui-se como uma significativa vitrine de minha transição para a posição de desenvolvedor Fullstack.",
+        techs: [
+          "HTML",
+          "CSS",
+          "Javascript",
+          "Axios",
+          "NodeJs",
+          "SQLite",
+        ],
+      },
+      {
         name: "Soundify",
         image_url: "/projects/soundify-project.jpg",
         github_url: "https://github.com/pedrohenriquebraga/soundify",
