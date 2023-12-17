@@ -48,7 +48,30 @@
     },
     "my_projects": {
       "title": "Projetos em destaque",
-      "subtitle": "Sou responsável pelo desenvolvimento integral de todos os projetos, abrangendo desde o design até a implementação do código. Embora esses projetos tenham natureza pessoal, estou ativamente em busca de oportunidades para envolvimento em trabalhos profissionais. Para acessar uma seleção mais abrangente de meus projetos, convido a visitar meu perfil completo no <link>Github</link>."
+      "subtitle": "Sou responsável pelo desenvolvimento integral de todos os projetos, abrangendo desde o design até a implementação do código. Embora esses projetos tenham natureza pessoal, estou ativamente em busca de oportunidades para envolvimento em trabalhos profissionais. Para acessar uma seleção mais abrangente de meus projetos, convido a visitar meu perfil completo no <link>Github</link>.",
+      "projects": {
+        "github_button": "Ver no Github",
+        "portfolio": {
+          "name": "Portfólio",
+          "description": "Apresento meu portfólio aprimorado, marcado por modernidade e inovação. Com a adição de um blog pessoal e uma contagem regressiva para meu aniversário, acompanhada por um exclusivo mural de congratulações, este projeto destaca-se como um marco significativo em minha trajetória profissional."
+        },
+        "saturn_chat": {
+          "name": "Saturn Chat",
+          "description": "Este projeto em desenvolvimento é minha iniciativa mais significativa até o momento. Um aplicativo de mensagens para dispositivos móveis, simplificando funcionalidades do WhatsApp e Discord de maneira mais intuitiva. Destaca-se por um sistema avançado de convites, atribuição de cargos, envio de arquivos e mensagens de voz."
+        },
+        "saturn_chat_api": {
+          "name": "Saturn Chat API",
+          "description": "Essa API é a base operacional do Saturn Chat. Ela utiliza Express, o banco de dados PostgresSQL (acessado via TypeORM) e se destaca pelo avançado sistema de websockets. Esse sistema facilita a transmissão em tempo real de eventos entre o aplicativo e a API, otimizado com o Redis para armazenamento em cache."
+        },
+        "green_force": {
+          "name": "Green Force",
+          "description": "Um website elaborado com o propósito de promover a arborização como medida mitigadora do aquecimento global, este representa um dos primeiros projetos por mim desenvolvidos. Constitui-se como uma significativa vitrine de minha transição para a posição de desenvolvedor Fullstack."
+        },
+        "soundify": {
+          "name": "Soundify",
+          "description": "Um app de música para dispositivos móveis projetado para aprimorar a reprodução de faixas armazenadas localmente. Oferecendo recursos como reprodução em segundo plano, um reprodutor dinâmico com seleção automática de cores para o layout, e uma funcionalidade de listagem automática das músicas no dispositivo."
+        }
+      }
     },
     "contact": {
       "title": "Entre em contato",
