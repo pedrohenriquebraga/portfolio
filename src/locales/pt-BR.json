@@ -48,7 +48,7 @@
     },
     "my_projects": {
       "title": "Projetos em destaque",
-      "subtitle": "Sou responsável pelo desenvolvimento integral de todos os projetos, abrangendo desde o design até a implementação do código. Embora esses projetos tenham natureza pessoal, estou ativamente em busca de oportunidades para envolvimento em trabalhos profissionais. Para acessar uma seleção mais abrangente de meus projetos, convido a visitar meu perfil completo no <link>Github</link>.",
+      "subtitle": "Sou responsável pelo desenvolvimento integral de todos os projetos, abrangendo desde o design até a implementação do código. Para acessar uma seleção mais abrangente de meus projetos, convido a visitar meu perfil completo no <link>Github</link>.",
       "projects": {
         "github_button": "Ver no Github",
         "portfolio": {
