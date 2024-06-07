@@ -1,6 +1,6 @@
 ---
  
-title: “Guia definitivo de como escolher o notebook perfeito para você"
+title: "Guia definitivo de como escolher o notebook perfeito para você"
 
 date: "07/06/2024"
 
