@@ -24,7 +24,7 @@ Então hoje eu vou estar falando sobre as **principais peças de um Notebook** e
 
 O processador é basicamente o **cérebro** dos computadores. Ele é responsável por processar milhões de cálculos por segundo e executar todos os programas que você usa no seu dia-a-dia.
 
-Porém, nem todo processador é igual, pois cada tem um potência diferente, o que afeta diretamente a **performance** com que seus programas são executados e a **velocidade do Notebook** em geral. Além disso, diferente dos computadores de mesa, os Notebooks não permitem que essa peça seja trocada, fazendo assim que ela acompanhe seu notebook até os últimos dias de sua vida útil. Por isso, vou mostrar algumas opções de processadores existentes e para qual fim ele deve ser usado.
+Porém, nem todo processador é igual, pois cada um tem uma potência diferente, o que afeta diretamente a **performance** com que seus programas são executados e a **velocidade do Notebook** em geral. Além disso, diferente dos computadores de mesa, os Notebooks não permitem que essa peça seja trocada, fazendo assim que ela acompanhe seu notebook até os últimos dias de sua vida útil. Por isso, vou mostrar algumas opções de processadores existentes e para qual fim ele deve ser usado.
 
 #### Intel Celeron
 
@@ -80,7 +80,7 @@ Hoje, todos os processadores da Intel vem um GPU **integrada** (ou seja, vem jun
 
 ## Qual o notebook ideal para você?
 
-Eu sei que mesmo lendo o post você pode ter ficado em dúvida sobre qual o melhor notebook para você, por isso eu vou listar algumas configurações mais custo-benefício que você deve procurar em um notebook de acordo com trabalho que ele vai realizar,
+Eu sei que mesmo lendo o post você pode ter ficado em dúvida sobre qual o melhor notebook para você, por isso eu vou listar algumas configurações mais custo-benefício que você deve procurar em um notebook de acordo com trabalho que ele vai realizar.
 
 ### Para a maioria do público 
 
