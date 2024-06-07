@@ -1,6 +1,6 @@
 ---
 
-title: “A inteligência artificial não é tão inteligente como parece, e o cérebro humano pode provar"
+title: "A inteligência artificial não é tão inteligente como parece, e o cérebro humano pode provar"
 date: "06/06/2024"
 author: "Pedro Henrique"
 description: "Hoje no meu blog, eu vou falar um pouquinho sobre o porquê eu vejo que a inteligência artificial não é (e nem será) tão inteligente como um humano. Lembrando que tudo aqui é baseado na minha opinião, então leve isso como verdade absoluta para sua vida, mas sim use para raciocinar sobre o assunto."
