@@ -1,15 +1,10 @@
 ---
 
 title: “A inteligência artificial não é tão inteligente como parece, e o cérebro humano pode provar"
-
 date: "06/06/2024"
-
 author: "Pedro Henrique"
-
 description: "Hoje no meu blog, eu vou falar um pouquinho sobre o porquê eu vejo que a inteligência artificial não é (e nem será) tão inteligente como um humano. Lembrando que tudo aqui é baseado na minha opinião, então leve isso como verdade absoluta para sua vida, mas sim use para raciocinar sobre o assunto."
-
 banner: "/posts/cerebro-ia.jpg"
-
 ---
 
 Chat GPT? Google Gemini? Copilot? Desde [meu último post, sobre o Chat GPT,](https://pedrobraga.vercel.app/blog/posts/chatgpt-the-most-powerful-chatbot) muita coisa mudou. Muitas IAs surgiram, nos surpreenderam de formas como nunca imaginamos. Vídeos sendo criados do **absoluto zero**, criar imagens somente usando textos como base,correções em códigos de programação e até mesmo recriar vozes apenas com alguns segundos de uma voz original. Mas agora você pode se perguntar: *A IA irá superar a inteligência humana algum dia?* E a minha resposta é **NÃO!! A IA não vai tomar nosso posto de único ser racional conhecido na Terra.** E nesse artigo vou dar motivos para provar que o ser humano não vai ser superado pelas máquinas (por enquanto 👀).
