@@ -34,6 +34,12 @@ const Posts = ({ posts }: { posts: Post[] }) => {
 export async function getStaticProps({ locale }: GetStaticPropsContext) {
   const posts = await getPosts();
 
+  posts.sort((a, b) => {
+    let aa = a.date.split("/").reverse().join(),
+      bb = b.date.split("/").reverse().join();
+    return aa < bb ? -1 : aa > bb ? 1 : 0;
+  }).reverse();
+
   return {
     props: {
       posts,
