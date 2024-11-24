@@ -6,6 +6,8 @@ description: "Saturn Chat é um aplicativo de mensagens Open-Source desenvolvido
 banner: "/posts/saturn-chat-banner.jpg"
 ---
 
+_Atualização: Saturn Chat foi lançado no mês de novembro de 2024, caso tenha interesse em testar ele, basta acessar [este link](https://play.google.com/store/apps/details?id=com.flowapps.saturnchat). Algumas funcionalidades podem ter sofrido alterações._
+
 **Saturn Chat** é um aplicativo desenvolvido por [mim](/) com o objetivo de trazer mais facilidade para quem quer usar todas as funcionalidades que um app de mensagens moderno pode oferecer. O app é focado em conversas em grupo, podendo também ser usado para conversas diretas (DM) entre amigos.
 
 Eu gosto de dizer que o Saturn Chat é o _”Whatsapp mais completo e o Discord menos complicado”_. Com isso eu quero dizer que o app tem mais funcionalidades que o Whatsapp (com um sistema de cargos e convites mais completo), porém com uma interface **mais amigável** a todos os usuários, tornando-o menos complexo que o Discord.
