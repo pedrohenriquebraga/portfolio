@@ -132,7 +132,7 @@ const Countdown: React.FC = () => {
           </h1>
           <p className="animate__animated animate__fadeIn animated__delay-1.5s">
             {t.rich("countdown.years_old_text", {
-              yearsOld: 20,
+              yearsOld: 21,
               bold: (child) => <strong>{child}</strong>,
               sup: (child) => <sup>{child}</sup>,
             })}
