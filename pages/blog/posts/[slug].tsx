@@ -4,8 +4,8 @@ import Body from "@components/Post/Body";
 import { GetStaticPathsContext, GetStaticPropsContext } from "next";
 import Head from "next/head";
 import React from "react";
-import getPosts from "src/lib/posts";
-import { Post } from "types/interfaces";
+import getPosts from "@lib/posts";
+import { Post } from "@_types/interfaces";
 
 const PostPage: React.FC<{ post: Post }> = ({ post }) => {
   return (

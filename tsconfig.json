@@ -18,7 +18,8 @@
       "@assets/*": ["./src/assets/*"],
       "@pages/*": ["./pages/*"],
       "@lib/*": ["./src/lib/*"],
-      "@models/*": ["./src/models/*"]
+      "@models/*": ["./src/models/*"],
+      "@_types/*": ["./types/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next-sitemap.config.js"],
