@@ -3,7 +3,7 @@ import ReactMarkdown from "react-markdown";
 import Image from "next/image";
 import CustomLink from "../customLink";
 import CustomImage from "../customImage";
-import { Post } from "types/interfaces";
+import { Post } from "@_types/interfaces";
 import { Container } from "./styles";
 
 import { FiClock, FiUser, FiCalendar, FiArrowLeft } from "react-icons/fi";
