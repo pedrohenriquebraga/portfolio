@@ -1,5 +1,5 @@
 import React from 'react';
-import { Post } from 'types/interfaces';
+import { Post } from '@_types/interfaces';
 import PostContent from '../PostContent';
 import { Container } from './styles';
 
