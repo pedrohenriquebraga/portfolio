@@ -13,10 +13,10 @@ const Skills: React.FC<{ skills: TSkills[] }> = ({ skills }) => {
   return (
     <Container id="my-skills">
       <h2>{t("my_skills.title")}</h2>
-      <AnimationOnScroll animateOnce animateIn="animate__zoomIn">
+      <AnimationOnScroll animateOnce animateIn="animate__fadeIn">
         <div id="skills-container">
-          {skills.map(({ name, docsUrl, srcImg, altImg }) => (
-            <div key={name} className="skill-container">
+          {[...skills, ...skills].map(({ name, docsUrl, srcImg, altImg }, index) => (
+            <div key={`${name}-${index}`} className="skill-container">
               <a
                 target="_blank"
                 rel="external noopener noreferrer"

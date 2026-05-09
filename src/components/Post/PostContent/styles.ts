@@ -4,6 +4,29 @@ export const Container = styled.main`
   display: flex;
   justify-content: center;
   padding-top: 12rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0 auto;
+
+  @media (min-width: 1920px) {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  @media (min-width: 1400px) and (max-width: 1919px) {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  @media (min-width: 2561px) {
+    padding-left: calc(50% - 1280px);
+    padding-right: calc(50% - 1280px);
+  }
+
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 
   .go-back {
     margin: 1rem 0;

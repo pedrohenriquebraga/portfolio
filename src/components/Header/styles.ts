@@ -24,6 +24,14 @@ export const Container = styled.header<{ openHeader: boolean }>`
   animation: ${ShowHeader} 500ms ease-in-out;
 
   transition: 300ms;
+
+  @media (min-width: 1920px) {
+    padding: 2rem 6rem;
+  }
+
+  @media (min-width: 1400px) and (max-width: 1919px) {
+    padding: 2rem 5rem;
+  }
   
   nav {
     display: flex;

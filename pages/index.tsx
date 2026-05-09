@@ -13,7 +13,7 @@ export type TSkills = {
   docsUrl: string;
   srcImg: string;
   altImg: string;
-}
+};
 
 const Main: React.FC<{ skills: TSkills[] }> = ({ skills }) => {
   const t = useTranslations("home");
@@ -30,7 +30,12 @@ const Main: React.FC<{ skills: TSkills[] }> = ({ skills }) => {
       </Head>
       <Container>
         <Header />
-        <Body skills={skills} />
+        <Body
+          skills={skills
+            .map((value) => ({ value, sort: Math.random() }))
+            .sort((a, b) => a.sort - b.sort)
+            .map(({ value }) => value)}
+        />
         <Footer />
       </Container>
     </>
@@ -38,7 +43,7 @@ const Main: React.FC<{ skills: TSkills[] }> = ({ skills }) => {
 };
 
 export function getStaticProps({ locale }: GetStaticPropsContext) {
-  const skills = [
+  const skills: TSkills[] = [
     {
       name: "Node JS",
       docsUrl: "https://nodejs.org/en/about/",
@@ -111,8 +116,19 @@ export function getStaticProps({ locale }: GetStaticPropsContext) {
       srcImg: "/logos/css-logo.png",
       altImg: "CSS Logo",
     },
+    {
+      name: "TensorFlow",
+      docsUrl: "https://www.tensorflow.org/",
+      srcImg: "/logos/tensorflow-logo.png",
+      altImg: "Tensowflow Logo",
+    },
+    {
+      name: "Python",
+      docsUrl: "https://www.python.org/",
+      srcImg: "/logos/python-logo.png",
+      altImg: "Python Logo",
+    },
   ];
-
 
   return {
     props: {
@@ -121,6 +137,5 @@ export function getStaticProps({ locale }: GetStaticPropsContext) {
     },
   };
 }
-
 
 export default Main;

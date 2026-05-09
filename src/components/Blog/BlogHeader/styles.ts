@@ -12,6 +12,14 @@ export const Container = styled.header`
   background-color: #ffffff;
   box-shadow: 1px 1px 5px #00000055;
 
+  @media (min-width: 1920px) {
+    padding: 2rem 6rem;
+  }
+
+  @media (min-width: 1400px) and (max-width: 1919px) {
+    padding: 2rem 5rem;
+  }
+
   #logo {
     a {
       display: flex;

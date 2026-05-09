@@ -7,6 +7,28 @@ export const Container = styled.section`
   flex: 1;
   padding: 4rem 6rem;
   background-color: #5863d8;
+  width: 100%;
+
+  @media (min-width: 1920px) {
+    padding: 4rem 12rem;
+  }
+
+  @media (min-width: 1400px) and (max-width: 1919px) {
+    padding: 4rem 8rem;
+  }
+
+  @media (min-width: 2561px) {
+    padding-left: calc(50% - 1280px);
+    padding-right: calc(50% - 1280px);
+  }
+
+  @media (max-width: 1024px) {
+    padding: 4rem 4rem;
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem 2rem;
+  }
 
   #my-projects-container {
     h2 {
@@ -34,6 +56,14 @@ export const Container = styled.section`
 export const ProjectsCardsContainer = styled.div`
   column-count: 3;
   column-gap: 1.5rem;
+
+  @media (max-width: 1400px) {
+    column-count: 2;
+  }
+
+  @media (max-width: 768px) {
+    column-count: 1;
+  }
 
   .card-container {
     width: 90%;

@@ -23,6 +23,21 @@ export const Container = styled.div`
   color: #fff;
   background-color: #00000033;
   text-align: center;
+  padding: 2rem;
+  width: 100%;
+
+  @media (min-width: 1920px) {
+    padding: 2rem 12rem;
+  }
+
+  @media (min-width: 1400px) and (max-width: 1919px) {
+    padding: 2rem 8rem;
+  }
+
+  @media (min-width: 2561px) {
+    padding-left: calc(50% - 1280px);
+    padding-right: calc(50% - 1280px);
+  }
 
   #countdown-container {
     text-align: center;

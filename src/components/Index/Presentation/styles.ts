@@ -42,8 +42,25 @@ export const Container = styled.header`
   padding: 2rem 6rem;
   min-height: 100vh;
   
-  @media (max-width: 768px) {
+  @media (min-width: 1920px) {
+    padding: 2rem 12rem;
+  }
+
+  @media (min-width: 1400px) and (max-width: 1919px) {
+    padding: 2rem 8rem;
+  }
+
+  @media (min-width: 2561px) {
+    padding-left: calc(50% - 1280px);
+    padding-right: calc(50% - 1280px);
+  }
+
+  @media (max-width: 1024px) {
     padding: 2rem 4rem;
+  }
+  
+  @media (max-width: 768px) {
+    padding: 2rem 2rem;
   }
   `;
 
@@ -56,7 +73,7 @@ export const PresentationContainer = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
 
     animation: ${ShowPresentation} 500ms linear;
 
@@ -73,7 +90,7 @@ export const PresentationContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 40%;
     min-height: 100vh;
 
     background: url('/programmer.webp') no-repeat center;
