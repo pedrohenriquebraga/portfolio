@@ -31,10 +31,7 @@ const Main: React.FC<{ skills: TSkills[] }> = ({ skills }) => {
       <Container>
         <Header />
         <Body
-          skills={skills
-            .map((value) => ({ value, sort: Math.random() }))
-            .sort((a, b) => a.sort - b.sort)
-            .map(({ value }) => value)}
+          skills={skills}
         />
         <Footer />
       </Container>
