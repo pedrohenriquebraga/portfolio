@@ -58,7 +58,7 @@ export const Container = styled.main`
   }
 
   @media (max-width: 768px) {
-    padding: 3rem 2rem;
+    padding: 4rem 3rem;
     flex-direction: column;
 
     #about-me-container {

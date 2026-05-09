@@ -20,7 +20,7 @@ export const Container = styled.section`
   }
 
   @media (max-width: 768px) {
-    padding: 2rem 2rem;
+    padding: 3rem 3rem;
   }
 
   h2 {
