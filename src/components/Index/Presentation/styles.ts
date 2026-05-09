@@ -64,6 +64,7 @@ export const PresentationContainer = styled.div`
       h1 {
         font-size: 4.2rem;
         color: #19162b;
+        white-space: pre-wrap;
       }
     }
   }
@@ -83,10 +84,13 @@ export const PresentationContainer = styled.div`
 
   #scroll-warning {
     display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    bottom: 2rem;
+    bottom: 4rem;
     left: 50%;
     transform: translateX(-50%);
+    width: fit-content;
 
     font-size: 1.6rem;
     animation: ${scrollDownAnimation} 1s linear infinite;

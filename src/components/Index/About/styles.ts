@@ -17,16 +17,6 @@ export const Container = styled.main`
       font-size: 3.5rem;
       margin-bottom: 3rem;
     }
-    p,
-    ul {
-      font-size: 1.7rem;
-      margin-bottom: 2rem;
-      color: #fcfcfd;
-
-      li {
-        margin-left: 5rem;
-      }
-    }
   }
 
   #left-side {
@@ -48,6 +38,90 @@ export const Container = styled.main`
 
     #left-side {
       display: none;
+    }
+  }
+`;
+
+export const CardsContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+`;
+
+export const CardContainer = styled.div`
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-5px);
+  }
+
+  .icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .content {
+    font-size: 1.2rem;
+    color: #fcfcfd;
+    line-height: 1.6;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        position: relative;
+
+        &:before {
+          content: "✓";
+          position: absolute;
+          left: 0;
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    
+    h3 {
+      font-size: 1.5rem;
+    }
+
+    .icon {
+      font-size: 2.5rem;
+    }
+
+    .content {
+      font-size: 1rem;
     }
   }
 `;

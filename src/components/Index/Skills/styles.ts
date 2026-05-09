@@ -11,8 +11,8 @@ export const Container = styled.section`
 
   #skills-container {
     display: grid;
-    grid-template-columns: repeat(4, minmax(30px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(3, minmax(30px, 1fr));
+    gap: 3rem;
     
     .skill-container {
       margin: 0 auto;

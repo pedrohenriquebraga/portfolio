@@ -29,18 +29,24 @@
     "about_me": {
       "title": "Sobre mim",
       "paragraphs": {
-        "0": "Sou programador Fullstack júnior com experiência em Typescript, React, React Native, Expo, NextJs, Postgres, Redis, Express e outras tecnologias. Busco constantemente melhorar minhas habilidades para enfrentar desafios em projetos inovadores.",
-        "1": "Estou em busca de oportunidades que me permitam aplicar essas habilidades de forma prática, contribuindo efetivamente para equipes colaborativas. Estou entusiasmado em participar do desenvolvimento de projetos estimulantes e contribuir para soluções eficazes.",
-        "2": "Além do meu interesse profissional, gosto de música, jogos e leitura, o que contribui para minha abordagem criativa na resolução de problemas."
+        "0": "Sou estudante de Ciência da Computação pela UFG, pesquisador em Visão Computacional e desenvolvedor mobile. Possuo experiência prática em desenvolvimento de soluções inovadoras, combinando conhecimento acadêmico com aplicações práticas em projetos reais.",
+        "1": "Busco oportunidades que me permitam aplicar e expandir meus conhecimentos em ambientes colaborativos, contribuindo significativamente para o desenvolvimento de soluções tecnológicas impactantes e de alto desempenho.",
+        "2": "Mantenho interesses em música, tecnologia e resolução de problemas complexos, que enriquecem minha capacidade analítica e criativa no desenvolvimento de aplicações."
+      },
+      "cards": {
+        "experience": "Experiência",
+        "objective": "Objetivo",
+        "interests": "Interesses",
+        "skills": "Habilidades"
       },
       "skills_list": {
-        "0": "Inglês intermediário",
-        "1": "Javascript/Typescript (ES6) e Python",
-        "2": "Desenvolvimento web (HTML/CSS, React e NextJS)",
-        "3": "Desenvolvimento mobile (React Native, Firebase e Expo)",
-        "4": "Desenvolvimento backend (NodeJS)",
-        "5": "Desenvolvimento de APIs (Express, Typeorm, Socket.io)",
-        "6": "Experiência com PostgresSQL, MongoDB e Redis"
+        "0": "Inglês intermediário - Comunicação técnica e documentação",
+        "1": "JavaScript/TypeScript (ES6+) e Python",
+        "2": "Desenvolvimento web responsivo (HTML/CSS, React, Next.js)",
+        "3": "Desenvolvimento mobile nativo (React Native, Firebase, Expo)",
+        "4": "Backend com Node.js e arquitetura escalável",
+        "5": "Design e implementação de APIs REST (Express, TypeORM, Socket.io)",
+        "6": "Bancos de dados relacionais e não-relacionais (PostgreSQL, MongoDB, Redis)"
       }
     },
     "my_skills": {

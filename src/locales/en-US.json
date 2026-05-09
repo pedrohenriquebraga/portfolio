@@ -29,18 +29,24 @@
     "about_me": {
       "title": "About me",
       "paragraphs": {
-        "0": "I'm a junior Fullstack programmer with experience in Typescript, React, React Native, Expo, NextJs, Postgres, Redis, Express and other technologies. I constantly seek to improve my skills to face challenges in innovative projects.",
-        "1": "I am looking for opportunities that allow me to apply these skills in a practical way, contributing effectively to collaborative teams. I am excited to participate in the development of exciting projects and contribute to effective solutions.",
-        "2": "In addition to my professional interest, I enjoy music, games and reading, which contribute to my creative approach to problem solving."
+        "0": "I am a Computer Science student at UFG, researcher in Computer Vision, and mobile developer with hands-on experience in developing innovative solutions. I combine academic knowledge with practical applications in real-world projects.",
+        "1": "I seek opportunities to apply and expand my technical expertise in collaborative environments, delivering high-impact technological solutions with strong performance and quality standards.",
+        "2": "I maintain keen interests in technology and solving complex problems, which enhance my analytical and creative capabilities in application development."
+      },
+      "cards": {
+        "experience": "Experience",
+        "objective": "Objective",
+        "interests": "Interests",
+        "skills": "Skills"
       },
       "skills_list": [
-        "English intermediary",
-        "Javascript/Typescript (ES6) and Python",
-        "Web development (HTML/CSS, React and NextJS)",
-        "Mobile development (React Native, Firebase and Expo)",
-        "Backend development (NodeJS)",
-        "API development (Express, Typeorm, Socket.io)",
-        "PostgresSQL, MongoDB and Redis"
+        "Intermediate English - Technical communication and documentation",
+        "JavaScript/TypeScript (ES6+) and Python",
+        "Responsive web development (HTML/CSS, React, Next.js)",
+        "Native mobile development (React Native, Firebase, Expo)",
+        "Backend with Node.js and scalable architecture",
+        "REST API design and implementation (Express, TypeORM, Socket.io)",
+        "Relational and non-relational databases (PostgreSQL, MongoDB, Redis)"
       ]
     },
     "my_skills": {
