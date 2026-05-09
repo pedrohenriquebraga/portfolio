@@ -1,6 +1,7 @@
 import { GetServerSideProps } from "next";
+// @ts-ignore
 import { getServerSideSitemapIndex } from "next-sitemap";
-import getPosts from "src/lib/posts";
+import getPosts from "@lib/posts";
 
 export const getServerSideProps = async (ctx: GetServerSideProps) => {
   const posts = await getPosts();

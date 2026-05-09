@@ -1,11 +1,11 @@
-import "react-toastify/dist/ReactToastify.css";
+require("react-toastify/dist/ReactToastify.css");
 import React, { useEffect, useMemo } from "react";
 import Footer from "@components/Footer";
 import Header from "@components/Header";
 import Body from "@components/MuralPosts/Body";
 import Head from "next/head";
-import BirthdayPost from "src/models/BirthdayPost";
-import dbConnect from "src/lib/db";
+import BirthdayPost from "@models/BirthdayPost";
+import dbConnect from "@lib/db";
 import { PostData } from "@components/MuralPosts/Posts";
 import { Container } from "@styles/pages/mural-posts";
 import { useRouter } from "next/router";
