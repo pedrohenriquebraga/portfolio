@@ -28,10 +28,14 @@ const units = [
 
 const Countdown: React.FC = () => {
   const t = useTranslations("my_birthday");
+  const { width, height } = useWindowSize();
+
 
   const [isBirthday, setIsBirthday] = useState(false);
   const [countdown, setCountdown] = useState(t("countdown.calc"));
   const [countdownInterval, setCountdownInterval] = useState<NodeJS.Timer>();
+  const [yearsOldOnBirthday, setYearsOldOnBirthday] = useState(0)
+  const [confettiSizes, setConfettiSize] = useState([0, 0]);
 
   const { locale, defaultLocale } = useRouter();
   const dateLocale = useMemo<Locale>(() => {
@@ -44,12 +48,12 @@ const Countdown: React.FC = () => {
     return locales[locale || defaultLocale];
   }, [locale, defaultLocale]);
 
-  const { width, height } = useWindowSize();
 
   useEffect(() => {
     const date = new Date();
     const currentYear = date.getFullYear();
     const currentYearBirthday = new Date(`04/14/${currentYear}, 00:00`);
+    const BIRTH_YEAR = 2005;
 
     if (isToday(currentYearBirthday)) {
       setIsBirthday(true);
@@ -59,6 +63,9 @@ const Countdown: React.FC = () => {
     const nextBirthdayDate = isAfter(date, currentYearBirthday)
       ? new Date(`04/14/${currentYear + 1}, 00:00`)
       : currentYearBirthday;
+    
+    const nextBirthdayYear = nextBirthdayDate.getFullYear();
+    setYearsOldOnBirthday(nextBirthdayYear - BIRTH_YEAR);
 
     const duration = intervalToDuration({
       start: nextBirthdayDate,
@@ -105,6 +112,10 @@ const Countdown: React.FC = () => {
 
     setCountdownInterval(interval);
 
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    setConfettiSize([width, height])
+
+
     return () => {
       clearInterval(countdownInterval);
     };
@@ -117,12 +128,12 @@ const Countdown: React.FC = () => {
       {!isBirthday ? (
         <div id="countdown-container">
           <Confetti
-            gravity={0.07}
+            gravity={0.06}
             friction={0.98}
-            width={width - 20}
-            height={height}
+            width={confettiSizes[0] - 20}
+            height={confettiSizes[1]}
             colors={["#ffffff44"]}
-            numberOfPieces={230}
+            numberOfPieces={300}
           />
           <p className="animate__animated animate__fadeIn animated__delay-1.5s">
             {t("countdown.missing_time")}
@@ -132,7 +143,7 @@ const Countdown: React.FC = () => {
           </h1>
           <p className="animate__animated animate__fadeIn animated__delay-1.5s">
             {t.rich("countdown.years_old_text", {
-              yearsOld: 21,
+              yearsOld: yearsOldOnBirthday,
               bold: (child) => <strong>{child}</strong>,
               sup: (child) => <sup>{child}</sup>,
             })}
@@ -145,11 +156,11 @@ const Countdown: React.FC = () => {
         >
           <Confetti
             hidden={!isBirthday}
-            gravity={0.07}
+            gravity={0.06}
             friction={0.98}
             width={width - 20}
             height={height}
-            numberOfPieces={230}
+            numberOfPieces={300}
           />
           <h1>{t("birthday.title")}</h1>
           <p>{t("birthday.subtitle")}</p>

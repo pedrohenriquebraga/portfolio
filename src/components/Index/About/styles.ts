@@ -84,7 +84,7 @@ export const CardContainer = styled.div`
   }
 
   .content {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: #fcfcfd;
     line-height: 1.6;
 

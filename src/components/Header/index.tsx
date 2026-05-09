@@ -49,6 +49,7 @@ const Header: React.FC<IHeader> = ({ hiddenNav, hiddenShadow, backColor }) => {
     <Container
       style={{
         backgroundColor: backColor || "#fff",
+        boxShadow: hiddenShadow ? "none" : "1px 1px 5px #00000055"
       }}
       openHeader={openHeader}
     >

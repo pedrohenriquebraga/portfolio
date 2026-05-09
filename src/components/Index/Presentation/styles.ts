@@ -104,6 +104,9 @@ export const PresentationContainer = styled.div`
   }
 
   @media (max-width: 768px) {
+    position: relative;
+    min-height: 100vh;
+    
     #right-side {
       width: 100%;
     }
@@ -118,6 +121,13 @@ export const PresentationContainer = styled.div`
           font-size: 3.5rem;
         }
       }
+    }
+
+    #scroll-warning {
+      bottom: 2rem;
+      width: 100%;
+      left: 0;
+      transform: none;
     }
   }
 `;
