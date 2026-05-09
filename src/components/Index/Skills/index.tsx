@@ -4,7 +4,7 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { TSkills } from "pages";
+import { TSkills } from "@pages/index";
 
 
 const Skills: React.FC<{ skills: TSkills[] }> = ({ skills }) => {
