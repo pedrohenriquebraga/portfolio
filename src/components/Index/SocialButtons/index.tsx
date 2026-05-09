@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { FaGithub, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Container } from "./styles";
 
 const SocialButtons: React.FC = () => {
@@ -16,6 +16,12 @@ const SocialButtons: React.FC = () => {
         url: "https://instagram.com/pedro_henriquebraga",
         className: "instagram",
         icon: <FaInstagram />,
+      },
+      {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/phsantosbraga/",
+        className: "linkedin",
+        icon: <FaLinkedin />,
       },
     ],
     []

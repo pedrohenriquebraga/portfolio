@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   display: flex;
   flex-direction: row;
+  gap: 1.5rem;
   margin-top: 2rem;
 
   .button-container {
@@ -25,6 +26,10 @@ export const Container = styled.section`
       );
     }
 
+    &.linkedin {
+      background-color: #0077b5;
+    }
+
     padding: 1.2rem 3rem;
     border-radius: 8px;
 
@@ -32,10 +37,6 @@ export const Container = styled.section`
     font-weight: 600;
     color: #fff;
     text-decoration: none;
-
-    &:first-child {
-      margin-right: 2rem;
-    }
 
     span {
       display: flex;

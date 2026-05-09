@@ -20,10 +20,10 @@
     "meta_infos": {
       "name": "Portfólio do Pedro Henrique",
       "title": "Pedro Henrique | Desenvolvedor fullstack | Frontend | Backend",
-      "desc": "Eu sou desenvolvedor fullstack, backend e frontend. Aqui você pode encontrar meus projetos, currículo e informações para contato."
+      "desc": "Eu sou desenvolvedor backend e frontend. Aqui você pode encontrar meus projetos, currículo e informações para contato."
     },
     "presentation": {
-      "title": "Olá, meu\nnome é Pedro Henrique.\nEu sou um desenvolvedor\nfullstack.",
+      "title": "Olá, meu\nnome é Pedro Henrique.\nEu sou um desenvolvedor.",
       "scroll_down": "Role para baixo"
     },
     "about_me": {

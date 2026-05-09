@@ -32,15 +32,14 @@ export const Container = styled.section`
 `;
 
 export const ProjectsCardsContainer = styled.div`
+  column-count: 3;
+  column-gap: 1.5rem;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-  gap: .3rem;
-
-  
   .card-container {
-    width: 28rem;
-    margin: 0 auto;
+    width: 90%;
+    margin: 0;
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
 
     img {
       width: 100%;
@@ -49,8 +48,12 @@ export const ProjectsCardsContainer = styled.div`
     }
 
     h3 {
-      font-size: 1.6rem;
+      font-size: 1.3rem;
       margin-bottom: 1rem;
+      line-height: 1.4;
+      min-height: 3rem;
+      display: flex;
+      align-items: center;
     }
 
     #project-infos-container {
@@ -59,9 +62,12 @@ export const ProjectsCardsContainer = styled.div`
       padding: 1.5rem;  
       border-bottom-right-radius: 12px;
       border-bottom-left-radius: 12px;
+      display: flex;
+      flex-direction: column;
 
       #techs-container {
         margin: 10px 0;
+        order: 3;
 
         .tech {
           display: inline-block;
@@ -69,7 +75,7 @@ export const ProjectsCardsContainer = styled.div`
           background-color: #5863d8;
           color: #fff;
           padding: .5rem 1.2rem;
-          font-size: 1.2rem;
+          font-size: 1rem;
           font-weight: 600;
           border-radius: 20px;
         }
@@ -78,7 +84,11 @@ export const ProjectsCardsContainer = styled.div`
       p {
         color: #000;
         font-size: 1.4rem;
-        margin-bottom: -.3rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        flex-grow: 1;
+        order: 2;
+        min-height: 4rem;
       }
 
       a {
@@ -88,10 +98,11 @@ export const ProjectsCardsContainer = styled.div`
         padding: 1rem;
         text-align: center;
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-decoration: none;
         cursor: pointer;
         border-radius: 12px;
+        order: 4;
       }
     }
 
@@ -102,7 +113,13 @@ export const ProjectsCardsContainer = styled.div`
     transition: 250ms;
   }
 
+  @media (max-width: 1200px) {
+    column-count: 2;
+  }
+
   @media (max-width: 632px) {
+    grid-template-columns: 1fr;
+    
     .card-container {
       width: 100%;
       margin-bottom: 10px;

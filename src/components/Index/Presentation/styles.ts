@@ -70,10 +70,13 @@ export const PresentationContainer = styled.div`
 
   #left-side {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
+    min-height: 100vh;
 
     background: url('/programmer.webp') no-repeat center;
-    background-size: 100%;
+    background-size: contain;
 
     animation: ${ShowBackgroundImage} 500ms linear;
   }
@@ -81,11 +84,13 @@ export const PresentationContainer = styled.div`
   #scroll-warning {
     display: flex;
     position: absolute;
-    top: 60vh;
-    right: 0;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
 
     font-size: 1.6rem;
     animation: ${scrollDownAnimation} 1s linear infinite;
+    color: #19162b;
 
     span {
       display: flex;
