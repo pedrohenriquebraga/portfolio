@@ -7,7 +7,7 @@ import Projects from '../Projects';
 import Skills from '../Skills';
 
 import { Container } from './styles';
-import { TSkills } from 'pages';
+import { TSkills } from '@pages/index';
 
 const Body: React.FC<{ skills: TSkills[] }> = ({ skills }) => {
   return (
