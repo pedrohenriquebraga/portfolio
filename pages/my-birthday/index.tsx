@@ -20,13 +20,11 @@ const MyBirthday: React.FC = () => {
         <meta property="og:description" content={t("meta_infos.desc")} />
         <meta name="description" content={t("meta_infos.desc")} />
       </Head>
-      <body>
-        <Container>
-          <Header hiddenNav hiddenShadow backColor="#00000000" />
-          <Body />
-          <Footer />
-        </Container>
-      </body>
+      <Container>
+        <Header hiddenNav hiddenShadow backColor="#00000000" />
+        <Body />
+        <Footer />
+      </Container>
     </>
   );
 };

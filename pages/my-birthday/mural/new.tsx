@@ -19,12 +19,10 @@ const NewMuralPost: React.FC = () => {
         <meta property="og:description" content={t("meta_infos.desc")} />
         <meta name="description" content={t("meta_infos.desc")} />
       </Head>
-      <body>
-        <Container>
-          <Header hiddenNav />
-          <Body />
-        </Container>
-      </body>
+      <Container>
+        <Header hiddenNav />
+        <Body />
+      </Container>
     </>
   );
 };

@@ -28,13 +28,11 @@ const Main: React.FC<{ skills: TSkills[] }> = ({ skills }) => {
         <meta property="og:description" content={t("meta_infos.desc")} />
         <meta name="description" content={t("meta_infos.desc")} />
       </Head>
-      <body>
-        <Container>
-          <Header />
-          <Body skills={skills} />
-          <Footer />
-        </Container>
-      </body>
+      <Container>
+        <Header />
+        <Body skills={skills} />
+        <Footer />
+      </Container>
     </>
   );
 };
