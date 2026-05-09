@@ -1,5 +1,5 @@
 import React from 'react';
-import { Post } from 'types/interfaces';
+import { Post } from '@_types/interfaces';
 import PostList from '../PostList';
 import Presentation from '../Presentation';
 import { Container } from './styles';

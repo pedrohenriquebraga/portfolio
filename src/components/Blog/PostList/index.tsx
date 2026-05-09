@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { Post } from "types/interfaces";
+import { Post } from "@_types/interfaces";
 import { Container, PostCard } from "./styles";
 import { FiClock, FiUser, FiCalendar } from "react-icons/fi";
 import Image from "next/image";

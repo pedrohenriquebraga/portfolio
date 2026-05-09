@@ -1,5 +1,5 @@
 import { promises as fs } from "fs";
-import { Post } from "types/interfaces";
+import { Post } from "@_types/interfaces";
 import matter from "gray-matter";
 import path from "path";
 import readingTime from "reading-time";

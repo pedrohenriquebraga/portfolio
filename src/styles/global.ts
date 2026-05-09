@@ -1,3 +1,6 @@
+// Ignore missing type declarations for this CSS side-effect import
+// TypeScript may complain: "Cannot find module or type declarations for side-effect import"
+// @ts-ignore
 import "animate.css/animate.min.css";
 import { createGlobalStyle } from 'styled-components';
 
