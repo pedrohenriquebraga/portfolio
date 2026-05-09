@@ -118,11 +118,14 @@ export const ProjectsCardsContainer = styled.div`
   }
 
   @media (max-width: 632px) {
+    display: grid;
     grid-template-columns: 1fr;
+    column-count: unset;
     
     .card-container {
       width: 100%;
       margin-bottom: 10px;
+      break-inside: auto;
     }
   }
 `;
